@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -11,13 +12,13 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Welcome to my app!" />
+        <Header title="Open Components" />
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          <code>Coming soon...</code>
         </p>
+        <p><a href="/The Open Components Ecosystem - draft 4.pdf">Read the paper</a> | <a href="https://discord.gg/auJb4H9ezx">Join the Community</a></p>
       </main>
 
-      <Footer />
     </div>
   )
 }
