@@ -15,7 +15,7 @@ export default function Home() {
         <p className="description">
           <code>Coming soon...</code>
         </p>
-        <p><a href="/The Open Components Ecosystem - draft 4.pdf">Read the paper</a> | <a href="https://discord.gg/auJb4H9ezx">Join the Community</a></p>
+        <p><a href="/The Open Components Ecosystem - draft 4.pdf">Read the paper</a> | <a href="https://www.surveymonkey.com/r/OpenComponents">Take the Survey</a> | <a href="https://discord.gg/auJb4H9ezx">Join the Community</a></p>
       </main>
 
     </div>
