@@ -8,23 +8,22 @@ const Features = () => (
     <Section>
       <div className="grid grid-cols-1 md:grid-cols-1 gap-x-8 gap-y-16 py-3">
         <FeatureElement
-            title="What are Open Components?"
+            title="Reusable Building Blocks for Bible Technology"
           >
             <p>
-              Open Components are reusable building blocks for Bible technology and Bible translation software.
-              These components are <em>extensible</em>, <em>portable</em>, and <em>open source</em>:
-            </p>
+              <em>Open Components are extensible, portable, and open source:</em>
+            </p><br />
             <p>
               <strong>Extensible</strong> software is designed to enable expansion of existing features or base functionality 
               by “plugging-in” code by other developers or applications. 
               Developers are invited to bring their code and “play in the sandbox” provided by the base technology.
-            </p>
+            </p><br />
             <p>
               <strong>Portable</strong> architectures go in the other direction: providing functionality that can be
               incorporated into other technologies, commonly in the form of libraries or simple apps. 
               Developers are invited to “create their own sandbox” by incorporating the portable components into their own
               apps.
-            </p>
+            </p><br />
             <p>
               <strong>Open source</strong> technology consists of source code that is made available under an open license, such
               that developers can repurpose, expand, improve, redistribute, and otherwise reuse the technology

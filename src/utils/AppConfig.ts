@@ -1,6 +1,6 @@
 export const AppConfig = {
   site_name: 'Open Components',
   title: 'Open Components',
-  description: 'Coming soon',
+  description: 'Open Components are reusable building blocks for Bible technology',
   locale: 'en',
 };
