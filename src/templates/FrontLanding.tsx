@@ -8,7 +8,7 @@ const FrontLanding = () => (
   <div className="splash-photo">
     <Section yPadding="py-1">
       <Logo xl />
-      <div className=""><em>full site coming soon&hellip;</em></div>
+      <div className=""><em>full site coming soon!&hellip;</em></div>
     </Section>
     
     <Features/>
