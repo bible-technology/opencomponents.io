@@ -41,7 +41,7 @@ function Footer() {
         </div>
 
         <div className="text-text-200 mr-2 text-center text-sm whitespace-nowrap md:text-lg">
-          -
+          &nbsp;
         </div>
       </div>
     </footer>
