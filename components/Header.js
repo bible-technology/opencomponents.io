@@ -49,6 +49,26 @@ function Header() {
         </svg>
       </div>
       <div className="text-text-600 hidden md:flex">
+        <div className="flex gap-2 btn group">
+          <div className="relative">
+            <a className="cursor-pointer">Hackathon 2023</a>
+            <div className="absolute flex-col mt-2 p-3 shadow-md z-50 bg-white rounded-md hidden group-hover:flex">
+              <Link href="/hackathon/register">
+                <a className="btn-gray">Registration</a>
+              </Link>
+              <Link href="/hackathon/schedule">
+                <a className="btn-gray">Schedule</a>
+              </Link>
+            </div>
+          </div>
+          <Image
+            src={Chevron}
+            alt="show more"
+            width="6"
+            height="4"
+            className="group-hover:rotate-180"
+          />
+        </div>
         <Link href="/about">
           <a className="btn-gray">About</a>
         </Link>

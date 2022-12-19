@@ -13,6 +13,7 @@
     "build": "npx prisma migrate deploy && next build",
     "start": "next start",
     "lint": "next lint",
+    "generate": "node -e 'require(\"react-google-forms-hooks\").googleFormsToJson(\"https://docs.google.com/forms/d/e/1FAIpQLSdma-rdJELwPGL-Iw7x28h3nZbvCaiFAABpz9B_17kuemSbWg/viewform\").then((data) =>  console.log(JSON.stringify(data)))' > GoogleForm.json",
     "seed": "dotenv -e .env.local -- npx prisma migrate dev"
   },
   "dependencies": {
@@ -20,6 +21,7 @@
     "@headlessui/react": "^1.6.6",
     "@heroicons/react": "^1.0.6",
     "@prisma/client": "4.2.0",
+    "@sendgrid/mail": "^7.7.0",
     "axios": "^0.27.2",
     "github-markdown-css": "^5.1.0",
     "graphql": "^16.6.0",
@@ -28,6 +30,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-gist": "^1.2.4",
+    "react-google-forms-hooks": "^1.2.4",
     "react-markdown": "^8.0.3",
     "react-simply-carousel": "^8.3.5",
     "rehype-highlight": "^5.0.2",
