@@ -4,6 +4,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import axios from 'axios'
+import { setCookie, getCookie } from 'cookies-next'
+
 import {
   useShortAnswerInput,
   useLongAnswerInput,
@@ -17,7 +20,6 @@ import form from '../../GoogleForm.json'
 
 import editor_black from '../../public/editor_black.svg'
 import eten_logo from '../../public/eten_logo.png'
-import axios from 'axios'
 
 const ShortAnswerInput = ({ id }) => {
   const { register, label, required, description } = useShortAnswerInput(id)
@@ -28,7 +30,7 @@ const ShortAnswerInput = ({ id }) => {
         <div>{label}</div>
         <div>{description}</div>
         <input
-          className="p-4 w-80 text-md bg-gray-100 rounded-lg placeholder:text-gray-700 focus:outline-none focus:bg-gray-200"
+          className="p-4 w-full text-md bg-gray-100 rounded-lg placeholder:text-gray-700 focus:outline-none focus:bg-gray-200"
           type={label.toLocaleLowerCase() === 'email' ? 'email' : 'text'}
           {...register()}
           required={required}
@@ -47,7 +49,7 @@ const LongAnswerInput = ({ id }) => {
         <div>{label}</div>
         <div>{description}</div>
         <textarea
-          className="p-4 text-gray-700 border-0 w-80 text-md bg-gray-100 rounded-lg placeholder:text-gray-700 focus:outline-none focus:bg-gray-200"
+          className="p-4 text-gray-700 border-0 w-full text-md bg-gray-100 rounded-lg placeholder:text-gray-700 focus:outline-none focus:bg-gray-200"
           {...register()}
           required={required}
         />
@@ -74,7 +76,7 @@ const RadioInput = ({ id }) => {
           <input type="radio" id={customOption.id} {...customOption.registerOption()} />
           <label htmlFor={customOption.id}>Your option</label>
           <input
-            className="p-4 block border-0 w-80 text-md bg-gray-100 rounded-lg placeholder:text-gray-700 focus:outline-none focus:bg-gray-200"
+            className="p-4 block border-0 w-full text-md bg-gray-100 rounded-lg placeholder:text-gray-700 focus:outline-none focus:bg-gray-200"
             type="text"
             {...customOption.registerCustomInput()}
           />
@@ -89,70 +91,39 @@ const DropdownInput = ({ id }) => {
   const { register, options, required, label, description } = useDropdownInput(id)
 
   return (
-    <div className="w-80">
+    <div className="w-full">
       <label>{label}</label>
       <div>{description}</div>
       <div
+        className="appearance-none text-white inline-flex uppercase select-none font-thin relative whitespace-nowrap h-14 w-full outline-none overflow-hidden bg-white"
         style={{
-          appearance: 'none',
-          color: 'white',
-          display: 'inline-flex',
-          textTransform: 'uppercase',
-          userSelect: 'none',
-          fontWeight: '100',
-          position: 'relative',
-          whiteSpace: 'nowrap',
-          lineHeight: '0',
-          height: '56px',
-          width: '100%',
           minWidth: '160px',
-          outline: 'none',
-          overflow: 'hidden',
           borderRadius: '6px',
-          backgroundColor: '#fff',
         }}
       >
         <select
+          className="appearance-none border border-black border-solid cursor-default text-black w-full px-4 pt-8 pb-4 rounded-lg font-bold bg-white"
           style={{
-            appearance: 'none',
-            border: 'none',
-            cursor: 'default',
-            color: '#000',
             fontSize: '14px',
             fontFamily: 'inherit',
-            width: '100%',
             wordSpacing: 'normal',
-            padding: '16px 32px 16px 16px',
             transition: 'border-color 0.2s ease, background-color 0.2s ease',
-            border: '1px solid black',
-            borderRadius: '8px',
-            fontWeight: '700',
-            backgroundColor: 'white',
           }}
           {...register()}
           required={required}
         >
           {options.map((o) => {
             return (
-              <option
-                style={{ backgroundColor: 'black', color: '#fff' }}
-                key={o.label}
-                value={o.label}
-              >
+              <option className="bg-black text-white" key={o.label} value={o.label}>
                 {o.label}
               </option>
             )
           })}
         </select>
         <div
+          className="flex h-full right-0 pointer-events-none items-center absolute"
           style={{
             width: '30px',
-            height: '100%',
-            position: 'absolute',
-            right: '0px',
-            pointerEvents: 'none',
-            display: 'flex',
-            alignItems: 'center',
             transition: 'border 0.2s ease 0s',
           }}
         >
@@ -180,26 +151,27 @@ const getEmailId = () => {
 }
 
 const getNameId = () => {
-  return form.fields.filter((res) => res.label.toLocaleLowerCase() === 'name')[0].id
+  return form.fields.filter((res) => res.label.toLocaleLowerCase() === 'first name')[0].id
 }
 
 export default function Register() {
   const methods = useGoogleForm({ form })
   const [formState, setFormState] = useState('default')
+  const [errorMsg, setErrorMsg] = useState('')
+  const [currentUser, setCurrentUser] = useState(() => getCookie('user'))
 
   const onSubmit = async (data) => {
     setFormState('loading')
-    console.log(data)
     await methods.submitToGoogleForms(data)
     axios
       .post('/api/confirm', { email: data[getEmailId()], name: data[getNameId()] })
       .then((res) => {
-        if (!res.ok) {
+        if (res.status !== 200) {
           setFormState('error')
-          setErrorMsg(err?.message ?? 'Error! Please try again.')
+          setErrorMsg(res?.error || 'Error! Please try again.')
         } else {
-          setPageState('ticket')
           setFormState('default')
+          setCookie('user', data[getEmailId()])
         }
       })
       .catch((err) => {
@@ -210,7 +182,7 @@ export default function Register() {
 
   const [continueReg, setContinueReg] = useState(false)
   return (
-    <div className="flex flex-col gap-10 mx-4 xl:gap-12">
+    <div className="flex flex-col gap-10 mx-4 xl:gap-12 mb-8">
       <Head>
         <title>Open Components 2023 Hackathon</title>
         <meta name="description" content="Open Components 2023 Hackathon" />
@@ -236,12 +208,16 @@ export default function Register() {
                 <Questions />
                 <button
                   type="submit"
-                  className="uppercase text-white py-2 px-4 rounded-md bg-primary-600 disabled:bg-gray-400"
+                  className="uppercase text-white py-2 px-4 mb-4 block mx-auto rounded-md bg-primary-600 disabled:bg-gray-400"
                   disabled={formState === 'loading'}
                 >
-                  {formState === 'loading' ? <>Loading</> : <>Submit</>}
+                  {formState === 'loading' ? <>Loading</> : <>Register</>}
                 </button>
-                {formState === 'error' ? <p style={{ color: 'red' }}>{errorMsg}</p> : ''}
+                {formState === 'error' ? (
+                  <p className="text-center text-red-600">{errorMsg}</p>
+                ) : (
+                  ''
+                )}
               </form>
             </GoogleFormProvider>
           </>
@@ -252,18 +228,18 @@ export default function Register() {
               <b>February 20 - 24, 2023</b> | Hackathon
             </div>
             <div className="flex mb-3">
-              <input
+              {/* <input
                 type="email"
                 placeholder="Enter email to register free"
                 className="input p-3 text-gray-700"
-              />
+              /> */}
               <button
                 onClick={() => {
                   setContinueReg(true)
                 }}
                 className="uppercase text-white py-3 px-4 ml-2 rounded-md bg-primary-600"
               >
-                Register
+                {currentUser ? currentUser : 'Register Now'}
               </button>
             </div>
           </>

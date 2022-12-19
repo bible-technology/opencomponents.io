@@ -1,11 +1,13 @@
 import sendgrid from '@sendgrid/mail'
 
-sendgrid.setApiKey(process.env.SG_API)
-
 export default async function handle(req, res) {
+  if (process.env.SG_API === '') {
+    return res.status(200).json({ success: true })
+  }
   switch (req.method) {
     case 'POST':
       try {
+        sendgrid.setApiKey(process.env.SG_API)
         await sendgrid.send({
           to: req.body.mail, // Your email where you'll receive emails
           from: process.env.SG_FROM, // your website email address here
