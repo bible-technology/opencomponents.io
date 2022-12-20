@@ -9,7 +9,7 @@ export default async function handle(req, res) {
       try {
         sendgrid.setApiKey(process.env.SG_API)
         await sendgrid.send({
-          to: req.body.mail, // Your email where you'll receive emails
+          to: req.body.email, // Your email where you'll receive emails
           from: process.env.SG_FROM, // your website email address here
           subject: `${req.body.name}! You are registered for the hackathon`,
           html: `<h2>Hello ${req.body.name}!</h2>
