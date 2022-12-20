@@ -81,7 +81,7 @@ const ShortAnswerInput = ({ id }) => {
         <div className="block mb-2 font-bold">{label}</div>
         <div>{description}</div>
         <input
-          className="p-4 w-full text-md bg-gray-100 rounded-lg placeholder:text-gray-700 focus:outline-none focus:bg-gray-200"
+          className="p-4 w-full text-md bg-gray-200 rounded-lg placeholder:text-gray-700 focus:outline-none focus:bg-gray-300"
           type={label.toLocaleLowerCase() === 'email' ? 'email' : 'text'}
           {...register()}
           required={required}
@@ -100,7 +100,7 @@ const LongAnswerInput = ({ id }) => {
         <div className="block mb-2 font-bold">{label}</div>
         <div>{description}</div>
         <textarea
-          className="p-4 text-gray-700 border-0 w-full text-md bg-gray-100 rounded-lg placeholder:text-gray-700 focus:outline-none focus:bg-gray-200"
+          className="p-4 text-gray-700 border-0 w-full text-md bg-gray-200 rounded-lg placeholder:text-gray-700 focus:outline-none focus:bg-gray-300"
           {...register()}
           required={required}
         />
@@ -129,7 +129,7 @@ const RadioInput = ({ id }) => {
             <label htmlFor={customOption.id}>Your option</label>
           </div>
           <input
-            className="p-4 block border-0 w-full text-md bg-gray-100 rounded-lg placeholder:text-gray-700 focus:outline-none focus:bg-gray-200"
+            className="p-4 block border-0 w-full text-md bg-gray-200 rounded-lg placeholder:text-gray-700 focus:outline-none focus:bg-gray-300"
             type="text"
             {...customOption.registerCustomInput()}
           />

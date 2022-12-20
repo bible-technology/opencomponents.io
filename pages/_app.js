@@ -4,7 +4,7 @@ import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
+    <Layout fullwidth={Component.fullwidth ?? false}>
       <Component {...pageProps} />
     </Layout>
   )
