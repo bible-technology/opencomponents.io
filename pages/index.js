@@ -29,7 +29,7 @@ function Home() {
               Open Components <br /> Hackathon 2023
             </div>
             <div className="w-36 text-white py-2.5 text-center rounded-lg bg-primary-600 hover:bg-primary-700 active:shadow-xl select-none font-bold active:shadow-primary-700/23 cursor-pointer">
-              Comming Soon!
+              Coming Soon!
             </div>
           </div>
         </div>
