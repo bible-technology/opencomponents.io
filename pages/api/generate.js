@@ -10,7 +10,7 @@ export default async function handler(req, res) {
           '1FAIpQLSdma-rdJELwPGL-Iw7x28h3nZbvCaiFAABpz9B_17kuemSbWg') +
         '/viewform'
     )
-    await fs.writeFile('./GoogleForm.json', JSON.stringify(data))
+    await fs.writeFile('GoogleForm.json', JSON.stringify(data))
   } catch (error) {
     return res.status(500).json({ error })
   }
