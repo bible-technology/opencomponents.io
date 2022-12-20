@@ -24,7 +24,7 @@ function Footer() {
               Join Discord
             </a>
           </Link>
-          <div>
+          <div className="flex flex-row flex-wrap">
             <Link href="/about">
               <a className="btn-transparent">About</a>
             </Link>
@@ -36,6 +36,9 @@ function Footer() {
             </Link>
             <Link href="/faq">
               <a className="btn-transparent hidden">FAQ</a>
+            </Link>
+            <Link href="/hackathon/register">
+              <a className="btn-transparent">Hackathon 2023</a>
             </Link>
           </div>
         </div>
