@@ -16,20 +16,20 @@ export default function Register({ user }) {
   const [currentUser, setCurrentUser] = useState(user)
   const [stateRegistration, setStateRegistration] = useState('default')
   useEffect(() => {
-    const hmac = crypto.createHmac('sha1', '123456')
-    console.log(1, hmac)
-    hmac.update('test')
-    console.log(2, hmac)
-    const result = hmac.digest('hex')
-    console.log(3, result)
+    // const hmac = crypto.createHmac('sha1', '123456')
+    // console.log(1, hmac)
+    // hmac.update('test')
+    // console.log(2, hmac)
+    // const result = hmac.digest('hex')
+    // console.log(3, result)
   }, [])
   return (
     <div className="flex flex-col gap-10 mx-4 xl:gap-12 mb-8">
       <Head>
-        <title>Open Components 2023 Hackathon</title>
+        <title>Open Components Hackathon 2023</title>
         <meta
           name="description"
-          content="Open Components 2023 Hackathon In partnership with ETEN Innovation Lab"
+          content="Open Components Hackathon 2023 In partnership with ETEN Innovation Lab"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -39,7 +39,7 @@ export default function Register({ user }) {
           <Image src={editor_black} alt="editor_black" width="90" height="90" />
         </div>
         <div className="text-center mb-3 text-2xl font-bold text-primary-600 md:mb-8 md:text-3xl lg:text-4xl xl:text-5xl md:w-3/5">
-          Open Components 2023 Hackathon
+          Open Components <br /> Hackathon 2023
         </div>
         <div className="text-center text-lg mb-2 text-primary-600 md:text-2xl lg:mb-5">
           In partnership with <span className="font-bold">ETEN Innovation Lab</span>
