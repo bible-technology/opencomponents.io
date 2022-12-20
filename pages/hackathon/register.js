@@ -27,7 +27,7 @@ const ShortAnswerInput = ({ id }) => {
   return (
     <>
       <label>
-        <div>{label}</div>
+        <div className="block mb-2 font-bold">{label}</div>
         <div>{description}</div>
         <input
           className="p-4 w-full text-md bg-gray-100 rounded-lg placeholder:text-gray-700 focus:outline-none focus:bg-gray-200"
@@ -46,7 +46,7 @@ const LongAnswerInput = ({ id }) => {
   return (
     <>
       <label>
-        <div>{label}</div>
+        <div className="block mb-2 font-bold">{label}</div>
         <div>{description}</div>
         <textarea
           className="p-4 text-gray-700 border-0 w-full text-md bg-gray-100 rounded-lg placeholder:text-gray-700 focus:outline-none focus:bg-gray-200"
@@ -63,18 +63,20 @@ const RadioInput = ({ id }) => {
 
   return (
     <>
-      <div>{label}</div>
-      <div>{description}</div>
+      <div className="block mb-2 font-bold">{label}</div>
+      <div className="text-gray-600 text-sm">{description}</div>
       {options.map((o) => (
-        <div key={o.id}>
+        <div key={o.id} className="flex space-x-2">
           <input type="radio" id={o.id} {...o.registerOption()} required={required} />
           <label htmlFor={o.id}>{o.label}</label>
         </div>
       ))}
       {customOption && (
         <div>
-          <input type="radio" id={customOption.id} {...customOption.registerOption()} />
-          <label htmlFor={customOption.id}>Your option</label>
+          <div className="flex space-x-2">
+            <input type="radio" id={customOption.id} {...customOption.registerOption()} />
+            <label htmlFor={customOption.id}>Your option</label>
+          </div>
           <input
             className="p-4 block border-0 w-full text-md bg-gray-100 rounded-lg placeholder:text-gray-700 focus:outline-none focus:bg-gray-200"
             type="text"
@@ -92,7 +94,7 @@ const DropdownInput = ({ id }) => {
 
   return (
     <div className="w-full">
-      <label>{label}</label>
+      <label className="block mb-2 font-bold">{label}</label>
       <div>{description}</div>
       <div
         className="appearance-none text-white inline-flex uppercase select-none font-thin relative whitespace-nowrap h-14 w-full outline-none overflow-hidden bg-white"
@@ -102,7 +104,7 @@ const DropdownInput = ({ id }) => {
         }}
       >
         <select
-          className="appearance-none border border-black border-solid cursor-default text-black w-full px-4 pt-8 pb-4 rounded-lg font-bold bg-white"
+          className="appearance-none border border-black border-solid cursor-default text-black w-full p-4 rounded-lg font-bold bg-white"
           style={{
             fontSize: '14px',
             fontFamily: 'inherit',
@@ -147,11 +149,13 @@ const DropdownInput = ({ id }) => {
 }
 
 const getEmailId = () => {
-  return form.fields.filter((res) => res.label.toLocaleLowerCase() === 'email')[0].id
+  return form?.fields?.filter((res) => res.label.toLocaleLowerCase() === 'email')?.[0]?.id
 }
 
 const getNameId = () => {
-  return form.fields.filter((res) => res.label.toLocaleLowerCase() === 'first name')[0].id
+  return form?.fields?.filter(
+    (res) => res.label.toLocaleLowerCase() === 'first name'
+  )?.[0]?.id
 }
 
 export default function Register() {
@@ -162,6 +166,11 @@ export default function Register() {
 
   const onSubmit = async (data) => {
     setFormState('loading')
+    if (!getEmailId() || !getNameId()) {
+      setFormState('error')
+      setErrorMsg('Form error. Contact the administrator.')
+      return false
+    }
     await methods.submitToGoogleForms(data)
     axios
       .post('/api/confirm', { email: data[getEmailId()], name: data[getNameId()] })
