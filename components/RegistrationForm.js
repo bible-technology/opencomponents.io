@@ -81,7 +81,7 @@ const ShortAnswerInput = ({ id }) => {
         <div className="block mb-2 font-bold">{label}</div>
         <div>{description}</div>
         <input
-          className="p-4 w-full text-md bg-gray-200 rounded-lg placeholder:text-gray-700 focus:outline-none focus:bg-gray-300"
+          className="px-4 input"
           type={label.toLocaleLowerCase() === 'email' ? 'email' : 'text'}
           {...register()}
           required={required}
@@ -99,11 +99,7 @@ const LongAnswerInput = ({ id }) => {
       <label>
         <div className="block mb-2 font-bold">{label}</div>
         <div>{description}</div>
-        <textarea
-          className="p-4 text-gray-700 border-0 w-full text-md bg-gray-200 rounded-lg placeholder:text-gray-700 focus:outline-none focus:bg-gray-300"
-          {...register()}
-          required={required}
-        />
+        <textarea className="px-4 input" {...register()} required={required} />
       </label>
     </>
   )
@@ -129,7 +125,7 @@ const RadioInput = ({ id }) => {
             <label htmlFor={customOption.id}>Your option</label>
           </div>
           <input
-            className="p-4 block border-0 w-full text-md bg-gray-200 rounded-lg placeholder:text-gray-700 focus:outline-none focus:bg-gray-300"
+            className="px-4 input"
             type="text"
             {...customOption.registerCustomInput()}
           />
@@ -148,14 +144,13 @@ const DropdownInput = ({ id }) => {
       <label className="block mb-2 font-bold">{label}</label>
       <div>{description}</div>
       <div
-        className="appearance-none text-white inline-flex uppercase select-none font-thin relative whitespace-nowrap h-14 w-full outline-none overflow-hidden bg-white"
+        className="appearance-none inline-flex uppercase select-none relative whitespace-nowrap w-full outline-none overflow-hidden rounded"
         style={{
           minWidth: '160px',
-          borderRadius: '6px',
         }}
       >
         <select
-          className="appearance-none border border-black border-solid cursor-default text-black w-full p-4 rounded-lg font-bold bg-white"
+          className="appearance-none cursor-default px-4 input bg-white"
           style={{
             fontSize: '14px',
             fontFamily: 'inherit',
@@ -167,7 +162,7 @@ const DropdownInput = ({ id }) => {
         >
           {options.map((o) => {
             return (
-              <option className="bg-black text-white" key={o.label} value={o.label}>
+              <option className="" key={o.label} value={o.label}>
                 {o.label}
               </option>
             )
@@ -181,17 +176,17 @@ const DropdownInput = ({ id }) => {
           }}
         >
           <svg
-            viewBox="0 0 24 24"
-            width="18"
-            height="18"
-            stroke="black"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            fill="none"
-            shapeRendering="geometricPrecision"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            ariaHidden="true"
+            className="h-5 w-5 text-black-400"
           >
-            <path d="M6 9l6 6 6-6" />
+            <path
+              fillRule="evenodd"
+              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+              clipRule="evenodd"
+            ></path>
           </svg>
         </div>
       </div>
