@@ -31,8 +31,8 @@ function Ticket({ email }) {
             </div>
             <div className="flex flex-col flex-wrap mt-8 md:flex-row w-full">
               <div className="flex-1">
-                <div className="uppercase text-lg mb-4">Learnathon</div>
-                <div className="font-bold text-sm flex flex-row space-x-2 mb-4">
+                <div className="uppercase font-bold text-lg mb-4">Learnathon</div>
+                <div className="text-sm flex flex-row space-x-2 mb-4">
                   <svg
                     version="1.1"
                     xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@ function Ticket({ email }) {
                   </svg>
                   <span>February&nbsp;13&nbsp;-&nbsp;17,&nbsp;2023</span>
                 </div>
-                <div className="font-bold text-sm flex flex-row space-x-2">
+                <div className="text-sm flex flex-row space-x-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -66,8 +66,8 @@ function Ticket({ email }) {
               </div>
 
               <div className="flex-1 mt-6 lg:mt-0">
-                <div className="uppercase text-lg mb-4">Hackathon</div>
-                <div className="font-bold text-sm flex flex-row space-x-2 mb-4">
+                <div className="uppercase font-bold text-lg mb-4">Hackathon</div>
+                <div className="text-sm flex flex-row space-x-2 mb-4">
                   <svg
                     version="1.1"
                     xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +84,7 @@ function Ticket({ email }) {
                   </svg>
                   <span>February&nbsp;20&nbsp;-&nbsp;24,&nbsp;2023</span>
                 </div>
-                <div className="font-bold text-sm flex flex-row space-x-2">
+                <div className="text-sm flex flex-row space-x-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
