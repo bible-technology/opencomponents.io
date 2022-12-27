@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 import Head from 'next/head'
 import Image from 'next/image'
@@ -6,23 +6,17 @@ import Link from 'next/link'
 
 import { getCookie } from 'cookies-next'
 
-import editor_black from '../../public/editor_black.svg'
-//import eten_logo from '../../public/eten_logo.png'
+import groupImage from '../../public/group.png'
+import eten_logo from '../../public/eten_logo.png'
+import uw_logo from '../../public/unfoldingword.svg'
+import tt_logo from '../../public/tt_logo.png'
 import RegistrationForm from '../../components/RegistrationForm'
-import crypto from 'crypto'
 import Ticket from '../../components/Ticket'
 
 export default function Register({ user }) {
   const [currentUser, setCurrentUser] = useState(user)
   const [stateRegistration, setStateRegistration] = useState('default')
-  useEffect(() => {
-    // const hmac = crypto.createHmac('sha1', '123456')
-    // console.log(1, hmac)
-    // hmac.update('test')
-    // console.log(2, hmac)
-    // const result = hmac.digest('hex')
-    // console.log(3, result)
-  }, [])
+
   return (
     <div className="flex flex-col gap-10 mx-4 xl:gap-12 mb-8">
       <Head>
@@ -34,17 +28,32 @@ export default function Register({ user }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <div className="flex flex-col lg:flex-row items-center rounded-xl bg-[#ccc53f] px-12 py-6">
+        <div className="basis-0 shrink flex-grow-[3]">
+          <div className="mb-3 mt-12 text-2xl font-bold text-gray-800 md:mb-8 md:text-4xl lg:text-5xl xl:text-6xl">
+            Open Components <br /> Hackathon 2023
+          </div>
+          <div className="text-lg mb-6 text-gray-700 md:text-xl lg:mb-5">
+            In partnership with <span className="font-bold">ETEN Innovation Lab</span>
+          </div>
+          <div className="logos flex mt-12">
+            <div className="grayscale brightness-50 mr-2">
+              <Image src={eten_logo} alt="eten_logo" width="130" height="40" />
+            </div>
+            <div className="grayscale brightness-50 mx-2">
+              <Image src={uw_logo} alt="uw_logo" width="228" height="40" />
+            </div>
+            <div className="grayscale brightness-50 mx-2">
+              <Image src={tt_logo} alt="tt_logo" width="145" height="40" />
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-row self-end basis-0 shrink flex-grow-[2]">
+          <Image src={groupImage} alt="groupImage" width="710" height="523" />
+        </div>
+      </div>
+
       <div className="flex flex-col items-center">
-        <div className="flex flex-row self-end mr-10 md:mr-20 lg:mr-48 xl:mr-64 2xl:mr-96">
-          <Image src={editor_black} alt="editor_black" width="90" height="90" />
-        </div>
-        <div className="text-center mb-3 text-2xl font-bold text-primary-600 md:mb-8 md:text-3xl lg:text-4xl xl:text-5xl md:w-3/5">
-          Open Components <br /> Hackathon 2023
-        </div>
-        <div className="text-center text-lg mb-2 text-primary-600 md:text-2xl lg:mb-5">
-          In partnership with <span className="font-bold">ETEN Innovation Lab</span>
-        </div>
-        {/* <Image src={eten_logo} alt="eten_logo" width="162" height="50" /> */}
         <br />
         {stateRegistration === 'form' ? (
           <RegistrationForm
@@ -53,39 +62,66 @@ export default function Register({ user }) {
           />
         ) : stateRegistration === 'default' ? (
           <>
-            <div className="uppercase text-lg my-6 text-primary-600">
-              <b>February 13 - 17, 2023</b> | Learnathon <br />
-              <b>February 20 - 24, 2023</b> | Hackathon
-            </div>
-            <div className="flex mb-3">
-              {/* <input
-                type="email"
-                placeholder="Enter email to register free"
-                className="input p-3 text-gray-700"
-              /> */}
-              {currentUser ? (
-                <button
-                  onClick={() => setStateRegistration('ticket')}
-                  className="uppercase text-white py-3 px-4 ml-2 rounded-md bg-primary-600"
-                >
-                  Show my ticket
-                </button>
-              ) : (
-                <button
-                  onClick={() => setStateRegistration('form')}
-                  className="uppercase text-white py-3 px-4 ml-2 rounded-md bg-primary-600"
-                >
-                  Register Now
-                </button>
-              )}
+            <div className="grid grid-cols-1 gap-5 my-5 sm:grid-cols-1 md:grid-cols-2 md:my-10 xl:grid-cols-3 w-full">
+              <div className="flex flex-row justify-between py-8 px-6 bg-primary-100 h-full sm:h-44 rounded-xl">
+                <div className="flex-grow w-2/3">
+                  <div className="mb-8">
+                    <div className="line-clamp-1 uppercase font-bold text-xl">
+                      Learnathon
+                    </div>
+                  </div>
+                  <div className="pr-2 my-4 text-gray-500 text-sm line-clamp-3">
+                    February 13 - 17, 2023
+                  </div>
+                </div>
+                <div className="w-1/3 relative"></div>
+              </div>
+              <div className="flex flex-row justify-between py-8 px-6 bg-primary-100 h-full sm:h-44 rounded-xl">
+                <div className="flex-grow w-2/3">
+                  <div className="mb-8">
+                    <div className="line-clamp-1 uppercase font-bold text-xl">
+                      Hackathon
+                    </div>
+                  </div>
+                  <div className="pr-2 my-4 text-gray-500 text-sm line-clamp-3">
+                    February 20 - 24, 2023
+                  </div>
+                </div>
+                <div className="w-1/3 relative"></div>
+              </div>
+              <div className="flex flex-row justify-end py-8 px-6 h-full sm:h-44">
+                <div className="flex items-center">
+                  <div className="mr-3">
+                    {currentUser ? (
+                      <button
+                        onClick={() => setStateRegistration('ticket')}
+                        className="uppercase text-white py-3 px-4 ml-2 rounded-md bg-primary-600"
+                      >
+                        Show my ticket
+                      </button>
+                    ) : (
+                      <button
+                        onClick={() => setStateRegistration('form')}
+                        className="uppercase text-white py-3 px-4 ml-2 rounded-md bg-primary-600"
+                      >
+                        Register Now
+                      </button>
+                    )}
+                  </div>
+                  <div className="pr-2 my-4 text-gray-500 text-sm line-clamp-3">
+                    <Link href="/hackathon/schedule">
+                      <a className="font-bold text-primary-600 underline decoration-primary-600 decoration-2 underline-offset-4">
+                        Learn More
+                      </a>
+                    </Link>
+                  </div>
+                </div>
+              </div>
             </div>
           </>
         ) : (
           <Ticket email={currentUser} />
         )}
-        <Link href="/hackathon/schedule">
-          <a className="underline-custom">Learn More</a>
-        </Link>
       </div>
     </div>
   )
