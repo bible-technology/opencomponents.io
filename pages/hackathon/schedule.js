@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 import editor_black from '../../public/editor_black.svg'
+import Link from 'next/link'
 
 export default function Schedule() {
   return (
@@ -17,174 +18,191 @@ export default function Schedule() {
           <Image src={editor_black} alt="editor_black" width="90" height="90" />
         </div>
         <div className="text-center mb-3 text-2xl font-bold text-primary-600 md:mb-8 md:text-3xl lg:text-4xl xl:text-5xl md:w-3/5">
-          Join us for Open Components Hackathon 2023
+          Open Components Hackathon 2023
         </div>
-        <p className="text-lg leading-9 mx-4 mb-8">
-          This event will be focused on identifying and developing solutions for
-          challenges within Bible translation. We hope this hackathon will inspire
-          breakthrough ideas that help accelerate the global Bible translation efforts.
-          The vision of the Open Components Ecosystem is a global community of Bible
-          technologists focused on creating open source modular and reusable Bible
-          software. The reuse of Open components in a decentralized and collaborative
-          model of development will lead to innovative and creative technologies that will
-          further equip the global church to produce, distribute, and use Bible
-          translations and biblical content in any language, on any technology, and in any
-          format needed. We would love for you to join this growing community and explore
-          Bible technology in collaboration with others.
-        </p>
+        <div className="text-lg lg:text-xl">
+          <p className="mt-5">
+            Join us for a two week sprint where you have an opportunity to explore
+            different solutions within the Bible technology space, learn new concepts and
+            network with others in the Open Components Community.
+          </p>
+          <p className="mt-5">
+            <span className="font-bold">Theme:</span> Components for the Translation
+            Resource Ecosystem
+          </p>
+          <p className="mt-5">
+            <span className="font-bold">Create a team:</span>{' '}
+            <a
+              href="https://forms.gle/VbeTG472AKbhpLnw9"
+              target="_blank"
+              className="text-primary-500 cursor-pointer hover:underline"
+              rel="noreferrer"
+            >
+              Survey link
+            </a>
+          </p>
+          <p className="my-5">
+            <span className="font-bold">Join an existing team:</span>{' '}
+            <a
+              target="_blank"
+              href="https://discord.gg/2zjFVgaw4E"
+              className="text-primary-500 cursor-pointer hover:underline"
+              rel="noreferrer"
+            >
+              Discord link
+            </a>
+          </p>
+        </div>
+
         <table className="table-auto border-collapse border border-slate-400">
           <thead>
             <tr>
-              <th className="border border-slate-400 py-1 px-2 bg-gray-300"></th>
-              <th className="border border-slate-400 py-1 px-2 bg-gray-300">
+              <th className="border border-slate-400 py-2 px-3 bg-gray-300"></th>
+              <th className="border border-slate-400 py-2 px-3 bg-gray-300">
                 Steps&nbsp;Involved
               </th>
-              <th className="border border-slate-400 py-1 px-2 bg-gray-300">
+              <th className="border border-slate-400 py-2 px-3 bg-gray-300">
                 Important&nbsp;Dates
               </th>
-              <th className="border border-slate-400 py-1 px-2 bg-gray-300">
-                Start&nbsp;Time
-              </th>
-              <th className="border border-slate-400 py-1 px-2 bg-gray-300">
-                End&nbsp;Time
-              </th>
-              <th className="border border-slate-400 py-1 px-2 bg-gray-300">
+              <th className="border border-slate-400 py-2 px-3 bg-gray-300">Timing</th>
+              <th className="border border-slate-400 py-2 px-3 bg-gray-300">
                 Description
               </th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td className="border border-slate-300 py-1 px-2">1</td>
-              <td className="border border-slate-300 py-1 px-2">Register</td>
-              <td className="border border-slate-300 py-1 px-2">
-                Dec&nbsp;2022&nbsp;- Feb&nbsp;6,&nbsp;2023
+              <td className="border border-slate-300 py-2 px-3">1</td>
+              <td className="border border-slate-300 py-2 px-3">Register</td>
+              <td className="border border-slate-300 py-2 px-3">
+                Jan&nbsp;6th&nbsp;-&nbsp;Feb&nbsp;6th
               </td>
-              <td className="border border-slate-300 py-1 px-2"></td>
-              <td className="border border-slate-300 py-1 px-2"></td>
-              <td className="border border-slate-300 py-1 px-2">
-                Click on the link to register
-              </td>
-            </tr>
-            <tr>
-              <td className="border border-slate-300 py-1 px-2">2</td>
-              <td className="border border-slate-300 py-1 px-2">
-                Join the Discord channel
-              </td>
-              <td className="border border-slate-300 py-1 px-2">
-                Dec&nbsp;2022&nbsp;- Feb&nbsp;6,&nbsp;2023
-              </td>
-              <td className="border border-slate-300 py-1 px-2"></td>
-              <td className="border border-slate-300 py-1 px-2"></td>
-              <td className="border border-slate-300 py-1 px-2">
-                Join the #oce-hackathon and introduce yourself to the Open Components
-                community
+              <td className="border border-slate-300 py-2 px-3"></td>
+              <td className="border border-slate-300 py-2 px-3">
+                You can register for the event at{' '}
+                <Link href="/hackathon/register">
+                  <a className="text-primary-500 hover:underline">register link</a>
+                </Link>
+                .
               </td>
             </tr>
             <tr>
-              <td className="border border-slate-300 py-1 px-2">3</td>
-              <td className="border border-slate-300 py-1 px-2">Form teams</td>
-              <td className="border border-slate-300 py-1 px-2">
-                Dec&nbsp;2022&nbsp;- Feb&nbsp;6,&nbsp;2023
+              <td className="border border-slate-300 bg-gray-100 py-2 px-3">2</td>
+              <td className="border border-slate-300 bg-gray-100 py-2 px-3">
+                Create team or Join existing team
               </td>
-              <td className="border border-slate-300 py-1 px-2"></td>
-              <td className="border border-slate-300 py-1 px-2"></td>
-              <td className="border border-slate-300 py-1 px-2">
-                Join an existing team or form a new team and update your team information
-                in https://discord.gg/2zjFVgaw4E
-              </td>
-            </tr>
-            <tr>
-              <td className="border border-slate-300 py-1 px-2">4</td>
-              <td className="border border-slate-300 py-1 px-2">
-                Create team channel in discord
-              </td>
-              <td className="border border-slate-300 py-1 px-2">
-                Dec&nbsp;2022&nbsp;- Feb&nbsp;6,&nbsp;2023
-              </td>
-              <td className="border border-slate-300 py-1 px-2"></td>
-              <td className="border border-slate-300 py-1 px-2"></td>
-              <td className="border border-slate-300 py-1 px-2">
-                Collaborate with the team online
-              </td>
-            </tr>
-            <tr>
-              <td className="border border-slate-300 py-1 px-2">5</td>
-              <td className="border border-slate-300 py-1 px-2">
-                Kickstart Learn-a-thon
-              </td>
-              <td className="border border-slate-300 py-1 px-2">
-                Feb&nbsp;13,&nbsp;2023
-              </td>
-              <td className="border border-slate-300 py-1 px-2">09:00&nbsp;AM</td>
-              <td className="border border-slate-300 py-1 px-2">11:00&nbsp;AM</td>
-              <td className="border border-slate-300 py-1 px-2">
-                Introduce teams and respective team learning goals
+              <td className="border border-slate-300 bg-gray-100 py-2 px-3"></td>
+              <td className="border border-slate-300 bg-gray-100 py-2 px-3"></td>
+              <td className="border border-slate-300 bg-gray-100 py-2 px-3">
+                You&#39;ll be working in teams for the two weeks. We recommend the team
+                size to be at least 3 and maximum 7 members. If you&#39;d like to create a
+                new team, please{' '}
+                <a
+                  href="https://forms.gle/VbeTG472AKbhpLnw9"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-primary-500 cursor-pointer hover:underline"
+                >
+                  fill out a form here
+                </a>
+                . If you&#39;d like to join an existing team, please{' '}
+                <a
+                  target="_blank"
+                  href="https://discord.gg/2zjFVgaw4E"
+                  className="text-primary-500 cursor-pointer hover:underline"
+                  rel="noreferrer"
+                >
+                  reach out to other participants here
+                </a>
+                .
               </td>
             </tr>
             <tr>
-              <td className="border border-slate-300 py-1 px-2">6</td>
-              <td className="border border-slate-300 py-1 px-2">Learn with your team</td>
-              <td className="border border-slate-300 py-1 px-2">
-                Feb&nbsp;13,&nbsp;2023&nbsp;- Feb&nbsp;17,&nbsp;2023
+              <td className="border border-slate-300 py-2 px-3">3</td>
+              <td className="border border-slate-300 py-2 px-3">
+                Join the OCE Community on Discord
               </td>
-              <td className="border border-slate-300 py-1 px-2"></td>
-              <td className="border border-slate-300 py-1 px-2"></td>
-              <td className="border border-slate-300 py-1 px-2">
-                {' '}
-                Collaborate and learn a new technology together
-              </td>
-            </tr>
-            <tr>
-              <td className="border border-slate-300 py-1 px-2">7</td>
-              <td className="border border-slate-300 py-1 px-2">Present your learning</td>
-              <td className="border border-slate-300 py-1 px-2">
-                Feb&nbsp;17,&nbsp;2023
-              </td>
-              <td className="border border-slate-300 py-1 px-2">09:00&nbsp;AM</td>
-              <td className="border border-slate-300 py-1 px-2">11:00&nbsp;AM</td>
-              <td className="border border-slate-300 py-1 px-2">
-                Demonstrate your learning including a short summary of the topic, its
-                application, pros and cons, etc.
+              <td className="border border-slate-300 py-2 px-3"></td>
+              <td className="border border-slate-300 py-2 px-3"></td>
+              <td className="border border-slate-300 py-2 px-3">
+                We encourage you to join and be an active part of our online community on
+                Discord as soon as you register.
               </td>
             </tr>
             <tr>
-              <td className="border border-slate-300 py-1 px-2">8</td>
-              <td className="border border-slate-300 py-1 px-2">Kickstart Hackathon</td>
-              <td className="border border-slate-300 py-1 px-2">
-                Feb&nbsp;20,&nbsp;2023
+              <td className="border border-slate-300 bg-gray-100 py-2 px-3">4</td>
+              <td className="border border-slate-300 bg-gray-100 py-2 px-3">
+                Learnathon Kick off
               </td>
-              <td className="border border-slate-300 py-1 px-2">09:00&nbsp;AM</td>
-              <td className="border border-slate-300 py-1 px-2">11:00&nbsp;AM</td>
-              <td className="border border-slate-300 py-1 px-2">
-                Introduce teams and respective problem statement.
+              <td className="border border-slate-300 bg-gray-100 py-2 px-3">
+                Feb&nbsp;13th
+              </td>
+              <td className="border border-slate-300 bg-gray-100 py-2 px-3">
+                9AM&nbsp;-&nbsp;11AM&nbsp;EST
+              </td>
+              <td className="border border-slate-300 bg-gray-100 py-2 px-3">
+                Introduce your team and your team&#39;s learning goals.
               </td>
             </tr>
             <tr>
-              <td className="border border-slate-300 py-1 px-2">9</td>
-              <td className="border border-slate-300 py-1 px-2">
-                Build and test your hypothesis
+              <td className="border border-slate-300 py-2 px-3">5</td>
+              <td className="border border-slate-300 py-2 px-3">Learn with your team</td>
+              <td className="border border-slate-300 py-2 px-3">
+                Feb&nbsp;13&nbsp;-&nbsp;Feb&nbsp;17th
               </td>
-              <td className="border border-slate-300 py-1 px-2">
-                Feb&nbsp;20,&nbsp;2023&nbsp;- Feb&nbsp;24,&nbsp;2023
+              <td className="border border-slate-300 py-2 px-3"></td>
+              <td className="border border-slate-300 py-2 px-3">
+                Collaborate and learn a new technology together.
               </td>
-              <td className="border border-slate-300 py-1 px-2"></td>
-              <td className="border border-slate-300 py-1 px-2"></td>
-              <td className="border border-slate-300 py-1 px-2">
+            </tr>
+            <tr>
+              <td className="border border-slate-300 bg-gray-100 py-2 px-3">6</td>
+              <td className="border border-slate-300 bg-gray-100 py-2 px-3">
+                Learning presentations
+              </td>
+              <td className="border border-slate-300 bg-gray-100 py-2 px-3">
+                Feb&nbsp;14&nbsp;-&nbsp;Feb&nbsp;16th
+              </td>
+              <td className="border border-slate-300 bg-gray-100 py-2 px-3">
+                9AM&nbsp;-&nbsp;11AM&nbsp;EST
+              </td>
+              <td className="border border-slate-300 bg-gray-100 py-2 px-3">
+                Several 50 minute learnathon sessions will be conducted throughout the
+                week. These sessions may be led by individuals or teams.
+              </td>
+            </tr>
+            <tr>
+              <td className="border border-slate-300 py-2 px-3">7</td>
+              <td className="border border-slate-300 py-2 px-3">Hackathon Kick off</td>
+              <td className="border border-slate-300 py-2 px-3">Feb&nbsp;20th</td>
+              <td className="border border-slate-300 py-2 px-3">
+                9AM&nbsp;-&nbsp;11AM&nbsp;EST
+              </td>
+              <td className="border border-slate-300 py-2 px-3">
+                Introduce your team&#39;s problem statement and related hypothesis.
+              </td>
+            </tr>
+            <tr>
+              <td className="border border-slate-300 bg-gray-100 py-2 px-3">8</td>
+              <td className="border border-slate-300 bg-gray-100 py-2 px-3">
+                Hack with your team
+              </td>
+              <td className="border border-slate-300 bg-gray-100 py-2 px-3">
+                Feb&nbsp;20&nbsp;-&nbsp;Feb&nbsp;23
+              </td>
+              <td className="border border-slate-300 bg-gray-100 py-2 px-3"></td>
+              <td className="border border-slate-300 bg-gray-100 py-2 px-3">
                 Hack a solution together.
               </td>
             </tr>
             <tr>
-              <td className="border border-slate-300 py-1 px-2">10</td>
-              <td className="border border-slate-300 py-1 px-2">
-                Demo your POC/Prototype
+              <td className="border border-slate-300 py-2 px-3">9</td>
+              <td className="border border-slate-300 py-2 px-3">Demo your Hack</td>
+              <td className="border border-slate-300 py-2 px-3">Feb&nbsp;24th</td>
+              <td className="border border-slate-300 py-2 px-3">
+                9AM&nbsp;-&nbsp;11AM&nbsp;EST
               </td>
-              <td className="border border-slate-300 py-1 px-2">
-                Feb&nbsp;24,&nbsp;2023
-              </td>
-              <td className="border border-slate-300 py-1 px-2">09:00&nbsp;AM</td>
-              <td className="border border-slate-300 py-1 px-2">11:00&nbsp;AM</td>
-              <td className="border border-slate-300 py-1 px-2">
+              <td className="border border-slate-300 py-2 px-3">
                 Demonstrate your solution and findings.
               </td>
             </tr>

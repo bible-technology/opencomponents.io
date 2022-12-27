@@ -11,14 +11,19 @@ export default async function handle(req, res) {
         await sendgrid.send({
           to: req.body.email, // Your email where you'll receive emails
           from: process.env.SG_FROM, // your website email address here
-          subject: `${req.body.name}! You are registered for the hackathon`,
-          html: `<h2>Hello ${req.body.name}!</h2>
-<p>You have successfully registered for the Open Components Hackathon.</p>
-<p>From <b>February 13 to 17</b>, the first part, Learnathon, will take place.<br/>
-Don't forget to add a reminder to your calendar.</p>
-<p>Also join our <a href="https://discord.gg/2zjFVgaw4E" target="_blank">discord</a>.</p>
+          subject: `Open Components Hackathon Confirmation: You have successfully registered!`,
+          html: `<p>Dear ${req.body.name},<br/>
 <br/>
-<p>We are glad to see you at the Hackathon!</p>`,
+Thank you for signing up for the Open Components Hackathon 2023. </p>
+<br/>
+<p><b>Learnathon</b>: February 13 - February 17, 2023</p>
+<p><b>Hackathon</b>: February 20 - February 24, 2023</p>
+<br/>
+<br/>
+<p>Please <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NmNoNTNoa2RnNWNnbHFvdHQ3c2NucjVydjlfMjAyMzAyMTNUMTQwMDAwWiBiaW5jeS5qb2JieUB1bmZvbGRpbmd3b3JkLm9yZw&tmsrc=bincy.jobby%40unfoldingword.org&scp=ALL">click here</a> to add this event to your calendar. To learn more about the event schedule, please <a href="https://opencomponents.io/hackathon/schedule">click here</a>. We look forward to seeing you soon!</p>
+<br/>
+<br/>
+Thanks`,
         })
       } catch (error) {
         return res.status(error.statusCode || 500).json({ error: error.message })

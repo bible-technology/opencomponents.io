@@ -8,7 +8,6 @@ import ComponentCard from '../components/ComponentCard'
 import AppCard from '../components/AppCard'
 import useNew from '../hooks/useNew'
 
-import editor_black from '../public/editor_black.svg'
 import ascent from '../public/ascent.svg'
 import introduction from '../public/introduction.svg'
 import explore from '../public/explore.svg'
@@ -19,7 +18,7 @@ function Home() {
   const { data, isLoading, isError } = useNew()
   return (
     <>
-      <div className="bg-secondary-400 mb-12 py-8">
+      {/* <div className="bg-secondary-400 mb-12 py-8">
         <div className="container mx-auto px-5">
           <div className="relative flex flex-col items-center">
             <div className="relative sm:absolute right-0 top-[0.35rem] md:-top-[0.65rem] lg:-top-1 xl:top-1 w-14 md:w-24 h-14 md:h-24 mr-0 sm:mr-20 md:mr-20 lg:mr-48 xl:mr-64 2xl:mr-96">
@@ -33,7 +32,7 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="container mx-auto px-5 flex-grow">
         <div className="flex flex-col gap-10 mx-4 xl:gap-12">
           <Head>

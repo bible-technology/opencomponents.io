@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import discord_black from '../public/discord_black.svg'
+import discord from '../public/discord.svg'
 import Logo from '../public/logo-white.svg'
 
 function Footer() {
@@ -20,7 +20,7 @@ function Footer() {
               target="_blank"
               className="inline-flex whitespace-nowrap py-2.5 px-6 gap-2 text-base rounded-lg bg-primary-100 text-primary-600 hover:bg-secondary-400 active:shadow-xl active:shadow-primary-700/23 md:px-4 md:gap-1 lg:px-6 lg:gap-2"
             >
-              <Image src={discord_black} alt="discord_black" width="24" height="23" />
+              <Image src={discord} alt="discord" width="24" height="23" />
               Join Discord
             </a>
           </Link>
