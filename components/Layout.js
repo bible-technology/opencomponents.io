@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 import Header from './Header'
 import Footer from './Footer'
 
-import editor_black from '../public/editor_black.svg'
+import button from '../public/button.png'
 
 export default function Layout({ fullwidth, children }) {
   const { route } = useRouter()
@@ -22,8 +22,13 @@ export default function Layout({ fullwidth, children }) {
                 Coming Soon!
               </div>
               <div className="w-14 h-14 hidden md:block relative">
-                <div className="w-20 h-20 -bottom-8 absolute">
-                  <Image src={editor_black} alt="editor_black" width="90" height="90" />
+                <div className="w-16 h-16 -bottom-8 right-3 absolute">
+                  <Image
+                    src={button}
+                    alt="Open Components Hackathon 2023"
+                    width="90"
+                    height="90"
+                  />
                 </div>
               </div>
             </div>
