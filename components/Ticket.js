@@ -9,7 +9,7 @@ function Ticket({ email }) {
     <div className="text-white mb-6 w-full sm:w-2/3">
       <div className="relative">
         <div
-          className="bg-primary-100 rounded-2xl grid p-3 md:p-8 relative before:contents before:w-16 before:h-16 before:absolute before:top-[calc(50%_-_2rem)] before:rounded-full before:-left-8 before:bg-white after:contents after:w-16 after:h-16 after:absolute after:top-[calc(50%_-_2rem)] after:rounded-full after:-right-8 after:bg-white"
+          className="bg-gray-200 rounded-2xl grid p-3 md:p-8 relative before:contents before:w-16 before:h-16 before:absolute before:top-[calc(50%_-_2rem)] before:rounded-full before:-left-8 before:bg-white after:contents after:w-16 after:h-16 after:absolute after:top-[calc(50%_-_2rem)] after:rounded-full after:-right-8 after:bg-white"
           style={{ gridAutoRows: '1fr' }}
         >
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4 items-center justify-center border-b border-b-gray-400 border-dashed mx-3 text-center text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-primary-600 py-6">

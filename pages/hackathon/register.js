@@ -35,20 +35,13 @@ export default function Register({ user }) {
           </div>
           <div className="text-lg mb-6 text-gray-700 md:text-xl lg:mb-5">
             In partnership with <span className="font-bold">ETEN Innovation Lab</span>
-          </div>
-          <div className="logos flex mt-12">
+            <br />
             <div className="grayscale brightness-50 mr-2">
               <Image src={eten_logo} alt="eten_logo" width="130" height="40" />
             </div>
-            <div className="grayscale brightness-50 mx-2">
-              <Image src={uw_logo} alt="uw_logo" width="228" height="40" />
-            </div>
-            <div className="grayscale brightness-50 mx-2">
-              <Image src={tt_logo} alt="tt_logo" width="145" height="40" />
-            </div>
           </div>
         </div>
-        <div className="flex flex-row self-end basis-0 shrink flex-grow-[2]">
+        <div className="flex flex-row basis-0 shrink flex-grow-[2]">
           <Image src={groupImage} alt="groupImage" width="710" height="523" />
         </div>
       </div>
@@ -62,8 +55,8 @@ export default function Register({ user }) {
           />
         ) : stateRegistration === 'default' ? (
           <>
-            <div className="grid grid-cols-1 gap-5 my-5 sm:grid-cols-1 md:grid-cols-2 md:my-10 xl:grid-cols-3 w-full">
-              <div className="flex flex-row justify-between py-8 px-6 bg-primary-100 h-full sm:h-44 rounded-xl">
+            <div className="grid grid-cols-1 gap-5 my-5 md:grid-cols-1 lg:grid-cols-3 md:my-10 xl:grid-cols-3 w-full">
+              <div className="flex flex-row justify-between py-8 px-6 bg-gray-200 h-full sm:h-44 rounded-xl">
                 <div className="flex-grow w-2/3">
                   <div className="mb-8">
                     <div className="line-clamp-1 uppercase font-bold text-xl">
@@ -76,7 +69,7 @@ export default function Register({ user }) {
                 </div>
                 <div className="w-1/3 relative"></div>
               </div>
-              <div className="flex flex-row justify-between py-8 px-6 bg-primary-100 h-full sm:h-44 rounded-xl">
+              <div className="flex flex-row justify-between py-8 px-6 bg-gray-200 h-full sm:h-44 rounded-xl">
                 <div className="flex-grow w-2/3">
                   <div className="mb-8">
                     <div className="line-clamp-1 uppercase font-bold text-xl">
@@ -122,6 +115,19 @@ export default function Register({ user }) {
         ) : (
           <Ticket email={currentUser} />
         )}
+        <div className="self-start">
+          <div className="uppercase font-bold text-xl text-primary-700 mb-4">
+            Presented by Partners
+          </div>
+          <div className="logos flex mt-12">
+            <div className="grayscale brightness-50 mx-2">
+              <Image src={uw_logo} alt="uw_logo" width="228" height="40" />
+            </div>
+            <div className="grayscale brightness-50 mx-2">
+              <Image src={tt_logo} alt="tt_logo" width="145" height="40" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )
