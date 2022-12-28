@@ -43,10 +43,10 @@ export default function Register({ user }) {
                       Learnathon
                     </div>
                   </div>
-                  <div className="pr-2 my-4 text-gray-500 text-base line-clamp-3">
+                  <div className="pr-2 my-4 text-gray-700 text-base line-clamp-3">
                     February 13 - 17, 2023
                   </div>
-                  <div className="pr-2 my-4 text-gray-500 text-base line-clamp-3">
+                  <div className="pr-2 my-4 text-gray-700 text-base line-clamp-3">
                     Remote
                   </div>
                 </div>
@@ -58,10 +58,10 @@ export default function Register({ user }) {
                       Hackathon
                     </div>
                   </div>
-                  <div className="pr-2 my-4 text-gray-500 text-base line-clamp-3">
+                  <div className="pr-2 my-4 text-gray-700 text-base line-clamp-3">
                     February 20 - 24, 2023
                   </div>
-                  <div className="pr-2 my-4 text-gray-500 text-base line-clamp-3">
+                  <div className="pr-2 my-4 text-gray-700 text-base line-clamp-3">
                     Remote | Orlando | New&nbsp;Delhi
                   </div>
                 </div>
@@ -85,7 +85,7 @@ export default function Register({ user }) {
                       </button>
                     )}
                   </div>
-                  <div className="pr-2 my-4 text-gray-500 text-sm line-clamp-3">
+                  <div className="pr-2 my-4 text-gray-700 text-sm line-clamp-3">
                     <Link href="/hackathon/schedule">
                       <a className="font-bold text-primary-600 underline decoration-primary-600 decoration-2 underline-offset-4 flex items-center">
                         <span className="mr-2.5">Learn More</span>

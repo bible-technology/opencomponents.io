@@ -19,13 +19,13 @@ export default function Schedule() {
         <div className="grid grid-cols-1 gap-5 mb-5 md:grid-cols-2 lg:grid-cols-3 md:mb-10 xl:grid-cols-3 w-full">
           <div className="py-8 px-6 bg-primary-100 rounded-xl w-full flex flex-col justify-between md:col-start-1 md:col-end-3 lg:col-end-auto lg:col-start-auto col-end-auto col-start-auto">
             <div className="text-primary-700 font-bold text-2xl">Hackathon theme</div>
-            <div className="mt-4 text-gray-500 text-xl">
+            <div className="mt-4 text-gray-700 text-xl">
               Components for the Translation Resource Ecosystem
             </div>
           </div>
           <div className="py-8 px-6 bg-primary-100 rounded-xl w-full flex flex-col justify-between">
             <div className="text-primary-700 font-bold text-2xl">Create a team</div>
-            <div className="mt-4 text-gray-500 text-base">
+            <div className="mt-4 text-gray-700 text-base">
               <a
                 href="https://forms.gle/VbeTG472AKbhpLnw9"
                 target="_blank"
@@ -43,7 +43,7 @@ export default function Schedule() {
             <div className="pr-2 mt-4">
               <a
                 target="_blank"
-                href="https://discord.gg/2zjFVgaw4E"
+                href="https://discord.gg/ryAcyRwJ"
                 className="text-white bg-primary-600 cursor-pointer hover:bg-primary-700 py-2 px-3 rounded-md inline-block uppercase active:shadow-xl select-none active:shadow-primary-700/23"
                 rel="noreferrer"
               >
@@ -114,7 +114,7 @@ export default function Schedule() {
                 . If you&#39;d like to join an existing team, please{' '}
                 <a
                   target="_blank"
-                  href="https://discord.gg/2zjFVgaw4E"
+                  href="https://discord.gg/ryAcyRwJ"
                   className="text-primary-500 cursor-pointer hover:underline"
                   rel="noreferrer"
                 >
