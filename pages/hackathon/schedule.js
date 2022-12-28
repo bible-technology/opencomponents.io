@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
-
-import editor_black from '../../public/editor_black.svg'
 import Link from 'next/link'
+
 import BannerHackathon from '../../components/BannerHackathon'
+
+import discord from '../../public/discord.svg'
 
 export default function Schedule() {
   return (
@@ -29,9 +30,22 @@ export default function Schedule() {
               <a
                 href="https://forms.gle/VbeTG472AKbhpLnw9"
                 target="_blank"
-                className="text-white bg-primary-600 cursor-pointer hover:bg-primary-700 py-2 px-3 rounded-md inline-block uppercase active:shadow-xl select-none active:shadow-primary-700/23"
+                className="text-white inline-flex items-center bg-primary-600 cursor-pointer hover:bg-primary-700 py-2 px-3 rounded-md uppercase active:shadow-xl select-none active:shadow-primary-700/23"
                 rel="noreferrer"
               >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="w-6 h-6 mr-2"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M8.25 6.75a3.75 3.75 0 117.5 0 3.75 3.75 0 01-7.5 0zM15.75 9.75a3 3 0 116 0 3 3 0 01-6 0zM2.25 9.75a3 3 0 116 0 3 3 0 01-6 0zM6.31 15.117A6.745 6.745 0 0112 12a6.745 6.745 0 016.709 7.498.75.75 0 01-.372.568A12.696 12.696 0 0112 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 01-.372-.568 6.787 6.787 0 011.019-4.38z"
+                    clipRule="evenodd"
+                  />
+                  <path d="M5.082 14.254a8.287 8.287 0 00-1.308 5.135 9.687 9.687 0 01-1.764-.44l-.115-.04a.563.563 0 01-.373-.487l-.01-.121a3.75 3.75 0 013.57-4.047zM20.226 19.389a8.287 8.287 0 00-1.308-5.135 3.75 3.75 0 013.57 4.047l-.01.121a.563.563 0 01-.373.486l-.115.04c-.567.2-1.156.349-1.764.441z" />
+                </svg>
                 Survey link
               </a>
             </div>
@@ -44,9 +58,19 @@ export default function Schedule() {
               <a
                 target="_blank"
                 href="https://discord.gg/ryAcyRwJ"
-                className="text-white bg-primary-600 cursor-pointer hover:bg-primary-700 py-2 px-3 rounded-md inline-block uppercase active:shadow-xl select-none active:shadow-primary-700/23"
+                className="text-white inline-flex items-center bg-primary-600 cursor-pointer hover:bg-primary-700 py-2 px-3 rounded-md uppercase active:shadow-xl select-none active:shadow-primary-700/23"
                 rel="noreferrer"
               >
+                <svg
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  stroke="none"
+                  fill="currentColor"
+                  className="w-6 h-6 mr-2"
+                >
+                  <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z" />
+                </svg>
                 Discord link
               </a>
             </div>
