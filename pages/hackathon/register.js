@@ -26,7 +26,7 @@ export default function Register({ user }) {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <BannerHackathon />
+      {['form', 'default'].includes(stateRegistration) ? <BannerHackathon /> : ''}
       <div className="flex flex-col items-center">
         {stateRegistration === 'form' ? (
           <RegistrationForm
@@ -43,11 +43,45 @@ export default function Register({ user }) {
                       Learnathon
                     </div>
                   </div>
-                  <div className="pr-2 my-4 text-gray-700 text-base line-clamp-3">
-                    February 13 - 17, 2023
+                  <div className="pr-2 my-4 text-gray-700 flex items-center text-base">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="w-5 h-5 mr-3"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
+                      />
+                    </svg>
+
+                    <span>February 13 - 17, 2023</span>
                   </div>
-                  <div className="pr-2 my-4 text-gray-700 text-base line-clamp-3">
-                    Remote
+                  <div className="pr-2 my-4 text-gray-700 flex items-center text-base">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="w-5 h-5 mr-3"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                      />
+                    </svg>
+                    <span>Remote</span>
                   </div>
                 </div>
               </div>
@@ -58,11 +92,44 @@ export default function Register({ user }) {
                       Hackathon
                     </div>
                   </div>
-                  <div className="pr-2 my-4 text-gray-700 text-base line-clamp-3">
-                    February 20 - 24, 2023
+                  <div className="pr-2 my-4 text-gray-700 flex items-center text-base">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="w-5 h-5 mr-3"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
+                      />
+                    </svg>
+                    <span>February 20 - 24, 2023</span>
                   </div>
-                  <div className="pr-2 my-4 text-gray-700 text-base line-clamp-3">
-                    Remote | Orlando | New&nbsp;Delhi
+                  <div className="pr-2 my-4 text-gray-700 flex items-center text-base">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="w-5 h-5 mr-3"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                      />
+                    </svg>
+                    <span>Remote | Orlando | New&nbsp;Delhi</span>
                   </div>
                 </div>
               </div>
@@ -72,20 +139,48 @@ export default function Register({ user }) {
                     {currentUser ? (
                       <button
                         onClick={() => setStateRegistration('ticket')}
-                        className="uppercase text-white py-3 px-4 rounded-md bg-primary-600"
+                        className="uppercase flex text-white py-3 px-4 rounded-md bg-primary-600"
                       >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth="1.5"
+                          stroke="currentColor"
+                          className="w-6 h-6 mr-2"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 010 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 010-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375z"
+                          />
+                        </svg>
                         Show Ticket
                       </button>
                     ) : (
                       <button
                         onClick={() => setStateRegistration('form')}
-                        className="uppercase text-white py-3 px-4 rounded-md bg-primary-600"
+                        className="uppercase flex text-white py-3 px-4 rounded-md bg-primary-600"
                       >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth="1.5"
+                          stroke="currentColor"
+                          className="w-6 h-6 mr-2"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+                          />
+                        </svg>
                         Register Now
                       </button>
                     )}
                   </div>
-                  <div className="pr-2 my-4 text-gray-700 text-sm line-clamp-3">
+                  <div className="pr-2 my-4 text-gray-700 text-sm">
                     <Link href="/hackathon/schedule">
                       <a className="font-bold text-primary-600 underline decoration-primary-600 decoration-2 underline-offset-4 flex items-center">
                         <span className="mr-2.5">Learn More</span>
@@ -113,33 +208,37 @@ export default function Register({ user }) {
         ) : (
           <Ticket email={currentUser} />
         )}
-        <div className="self-start">
-          <div className="uppercase font-bold text-xl text-primary-700 mt-4 mb-6">
-            Partners
-          </div>
-          <div className="flex-wrap flex mt-6">
-            <div className="grayscale brightness-50 opacity-70 hover:opacity-100 hover:grayscale-0 hover:brightness-100 transition-all m-4">
-              <a
-                target="_blank"
-                href="https://unfoldingword.org"
-                className="cursor-pointer"
-                rel="noreferrer"
-              >
-                <Image src={uw_logo} alt="uw_logo" width="228" height="40" />
-              </a>
+        {['form', 'default'].includes(stateRegistration) ? (
+          <div className="self-start">
+            <div className="uppercase font-bold text-xl text-primary-700 mt-4 mb-6">
+              Partners
             </div>
-            <div className="grayscale brightness-50 opacity-70 hover:opacity-100 hover:grayscale-0 hover:brightness-100 transition-all m-4">
-              <a
-                target="_blank"
-                href="https://texttree.org"
-                className="cursor-pointer"
-                rel="noreferrer"
-              >
-                <Image src={tt_logo} alt="tt_logo" width="145" height="40" />
-              </a>
+            <div className="flex-wrap flex mt-6">
+              <div className="grayscale brightness-50 opacity-70 hover:opacity-100 hover:grayscale-0 hover:brightness-100 transition-all m-4">
+                <a
+                  target="_blank"
+                  href="https://unfoldingword.org"
+                  className="cursor-pointer"
+                  rel="noreferrer"
+                >
+                  <Image src={uw_logo} alt="uw_logo" width="228" height="40" />
+                </a>
+              </div>
+              <div className="grayscale brightness-50 opacity-70 hover:opacity-100 hover:grayscale-0 hover:brightness-100 transition-all m-4">
+                <a
+                  target="_blank"
+                  href="https://texttree.org"
+                  className="cursor-pointer"
+                  rel="noreferrer"
+                >
+                  <Image src={tt_logo} alt="tt_logo" width="145" height="40" />
+                </a>
+              </div>
             </div>
           </div>
-        </div>
+        ) : (
+          ''
+        )}
       </div>
     </div>
   )
