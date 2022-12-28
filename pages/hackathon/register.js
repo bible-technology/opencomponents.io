@@ -6,12 +6,11 @@ import Link from 'next/link'
 
 import { getCookie } from 'cookies-next'
 
-import groupImage from '../../public/group.png'
-import eten_logo from '../../public/eten_logo.png'
 import uw_logo from '../../public/unfoldingword.svg'
 import tt_logo from '../../public/tt_logo.png'
 import RegistrationForm from '../../components/RegistrationForm'
 import Ticket from '../../components/Ticket'
+import BannerHackathon from '../../components/BannerHackathon'
 
 export default function Register({ user }) {
   const [currentUser, setCurrentUser] = useState(user)
@@ -27,34 +26,8 @@ export default function Register({ user }) {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <div className="flex flex-col lg:flex-row items-center rounded-xl bg-secondary-400 px-12 py-6">
-        <div className="basis-0 shrink flex-grow-[3]">
-          <div className="mb-3 mt-12 text-2xl font-bold text-gray-800 md:mb-8 md:text-4xl lg:text-5xl xl:text-6xl">
-            Open Components <br /> Hackathon 2023
-          </div>
-          <div className="text-lg mb-6 text-gray-700 md:text-xl lg:mb-5">
-            Presented by <span className="font-bold">ETEN Innovation Lab</span>
-            <br />
-            <div className="mt-4 grayscale brightness-50 mr-2">
-              <a
-                target="_blank"
-                href="https://eten.bible/"
-                className="cursor-pointer"
-                rel="noreferrer"
-              >
-                <Image src={eten_logo} alt="eten_logo" width="130" height="40" />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="flex flex-row basis-0 shrink flex-grow-[2]">
-          <Image src={groupImage} alt="groupImage" width="710" height="523" />
-        </div>
-      </div>
-
+      <BannerHackathon />
       <div className="flex flex-col items-center">
-        <br />
         {stateRegistration === 'form' ? (
           <RegistrationForm
             setCurrentUser={setCurrentUser}
@@ -63,10 +36,10 @@ export default function Register({ user }) {
         ) : stateRegistration === 'default' ? (
           <>
             <div className="grid grid-cols-1 gap-5 mb-5 md:grid-cols-2 lg:grid-cols-3 md:mb-10 xl:grid-cols-3 w-full">
-              <div className="flex flex-row justify-between py-8 px-6 bg-gray-200 rounded-xl">
+              <div className="flex flex-row justify-between py-8 px-6 bg-primary-100 rounded-xl">
                 <div className="flex-grow w-full">
                   <div>
-                    <div className="line-clamp-1 uppercase font-bold text-2xl">
+                    <div className="line-clamp-1 uppercase text-primary-700 font-bold text-2xl">
                       Learnathon
                     </div>
                   </div>
@@ -78,10 +51,10 @@ export default function Register({ user }) {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-row justify-between py-8 px-6 bg-gray-200 rounded-xl">
+              <div className="flex flex-row justify-between py-8 px-6 bg-primary-100 rounded-xl">
                 <div className="flex-grow w-full">
                   <div>
-                    <div className="line-clamp-1 uppercase font-bold text-2xl">
+                    <div className="line-clamp-1 uppercase text-primary-700 font-bold text-2xl">
                       Hackathon
                     </div>
                   </div>
@@ -145,7 +118,7 @@ export default function Register({ user }) {
             Partners
           </div>
           <div className="flex-wrap flex mt-6">
-            <div className="grayscale brightness-50 opacity-70 hover:opacity-100 hover:grayscale-0 hover:brightness-100 transition-all m-2">
+            <div className="grayscale brightness-50 opacity-70 hover:opacity-100 hover:grayscale-0 hover:brightness-100 transition-all m-4">
               <a
                 target="_blank"
                 href="https://unfoldingword.org"
@@ -155,7 +128,7 @@ export default function Register({ user }) {
                 <Image src={uw_logo} alt="uw_logo" width="228" height="40" />
               </a>
             </div>
-            <div className="grayscale brightness-50 opacity-70 hover:opacity-100 hover:grayscale-0 hover:brightness-100 transition-all m-2">
+            <div className="grayscale brightness-50 opacity-70 hover:opacity-100 hover:grayscale-0 hover:brightness-100 transition-all m-4">
               <a
                 target="_blank"
                 href="https://texttree.org"

@@ -12,7 +12,9 @@ export default async function handle(req, res) {
           to: req.body.email, // Your email where you'll receive emails
           from: process.env.SG_FROM, // your website email address here
           subject: `Open Components Hackathon Confirmation: You have successfully registered!`,
-          html: `<p>Dear ${req.body.name},<br/>
+          html: `<div style="padding:20px;">
+<img src="https://opencomponents.io/oce_banner.jpg" style="width:100%;margin-bottom:20px;"/>
+<p>Dear ${req.body.name},<br/>
 <br/>
 Thank you for signing up for the Open Components Hackathon 2023. </p>
 <br/>
@@ -23,7 +25,8 @@ Thank you for signing up for the Open Components Hackathon 2023. </p>
 <p>Please <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NmNoNTNoa2RnNWNnbHFvdHQ3c2NucjVydjlfMjAyMzAyMTNUMTQwMDAwWiBiaW5jeS5qb2JieUB1bmZvbGRpbmd3b3JkLm9yZw&tmsrc=bincy.jobby%40unfoldingword.org&scp=ALL">click here</a> to add this event to your calendar. To learn more about the event schedule, please <a href="https://opencomponents.io/hackathon/schedule">click here</a>. We look forward to seeing you soon!</p>
 <br/>
 <br/>
-Thanks`,
+Thanks
+</div>`,
         })
       } catch (error) {
         return res.status(error.statusCode || 500).json({ error: error.message })
