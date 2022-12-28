@@ -18,7 +18,7 @@ export default function Schedule() {
       <div className="flex flex-col items-center">
         <div className="grid grid-cols-1 gap-5 mb-5 md:grid-cols-2 lg:grid-cols-3 md:mb-10 xl:grid-cols-3 w-full">
           <div className="py-8 px-6 bg-primary-100 rounded-xl w-full flex flex-col justify-between md:col-start-1 md:col-end-3 lg:col-end-auto lg:col-start-auto col-end-auto col-start-auto">
-            <div className="text-primary-700 font-bold text-2xl">Theme</div>
+            <div className="text-primary-700 font-bold text-2xl">Hackathon theme</div>
             <div className="mt-4 text-gray-500 text-xl">
               Components for the Translation Resource Ecosystem
             </div>
