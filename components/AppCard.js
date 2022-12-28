@@ -10,7 +10,7 @@ function AppCard({ repo }) {
     >
       <div className="flex-grow w-2/3">
         <Link className="mb-8" href={`/app/${repo.nameWithOwner}`}>
-          <a className="line-clamp-1 uppercase font-bold text-xl cursor-pointer hover:underline">
+          <a className="line-clamp-1 uppercase text-primary-700 font-bold text-xl cursor-pointer hover:underline">
             {repo.name}
           </a>
         </Link>

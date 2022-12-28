@@ -11,7 +11,7 @@ export default function Layout({ fullwidth, children }) {
   const { route } = useRouter()
   return (
     <div className="flex flex-col min-h-screen">
-      {route !== '/hackathon/register' ? (
+      {!['/hackathon/register', '/hackathon/schedule'].includes(route) ? (
         <div className="bg-secondary-400 py-3 md:py-0">
           <div className="container mx-auto px-3">
             <div className="relative flex flex-col space-x-4 md:flex-row items-center justify-center overflow-hidden">

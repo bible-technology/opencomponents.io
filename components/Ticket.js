@@ -9,7 +9,7 @@ function Ticket({ email }) {
     <div className="text-white mb-6 w-full sm:w-2/3">
       <div className="relative">
         <div
-          className="bg-gray-200 rounded-2xl grid p-3 md:p-8 relative before:contents before:w-16 before:h-16 before:absolute before:top-[calc(50%_-_2rem)] before:rounded-full before:-left-8 before:bg-white after:contents after:w-16 after:h-16 after:absolute after:top-[calc(50%_-_2rem)] after:rounded-full after:-right-8 after:bg-white"
+          className="bg-primary-100 rounded-2xl grid p-3 md:p-8 relative before:w-16 before:h-16 before:absolute before:top-[calc(50%_-_2rem)] before:rounded-full before:-left-8 before:bg-white after:w-16 after:h-16 after:absolute after:top-[calc(50%_-_2rem)] after:rounded-full after:-right-8 after:bg-white"
           style={{ gridAutoRows: '1fr' }}
         >
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4 items-center justify-center border-b border-b-gray-400 border-dashed mx-3 text-center text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-primary-600 py-6">
@@ -26,12 +26,14 @@ function Ticket({ email }) {
             </div>
           </div>
           <div className="flex flex-col items-center md:items-start justify-center mx-3 py-6 md:mx-10 text-text-500">
-            <div className="text-center lg:text-left text-base md:text-xl font-bold">
+            <div className="text-center lg:text-left text-primary-700 text-base md:text-xl font-bold">
               {email}
             </div>
             <div className="flex flex-col flex-wrap mt-8 md:flex-row w-full">
               <div className="flex-1">
-                <div className="uppercase font-bold text-lg mb-4">Learnathon</div>
+                <div className="uppercase text-primary-700 font-bold text-lg mb-4">
+                  Learnathon
+                </div>
                 <div className="text-sm flex flex-row space-x-2 mb-4">
                   <svg
                     version="1.1"
@@ -66,7 +68,9 @@ function Ticket({ email }) {
               </div>
 
               <div className="flex-1 mt-6 lg:mt-0">
-                <div className="uppercase font-bold text-lg mb-4">Hackathon</div>
+                <div className="uppercase font-bold text-primary-700 text-lg mb-4">
+                  Hackathon
+                </div>
                 <div className="text-sm flex flex-row space-x-2 mb-4">
                   <svg
                     version="1.1"
