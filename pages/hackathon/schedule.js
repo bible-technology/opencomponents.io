@@ -1,10 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link'
 
-import BannerHackathon from '../../components/BannerHackathon'
-
-import discord from '../../public/discord.svg'
+import BannerHackathonSmall from '../../components/BannerHackathonSmall'
 
 export default function Schedule() {
   return (
@@ -15,7 +12,7 @@ export default function Schedule() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <BannerHackathon />
+      <BannerHackathonSmall />
       <div className="flex flex-col items-center">
         <div className="grid grid-cols-1 gap-5 mb-5 md:grid-cols-2 lg:grid-cols-3 md:mb-10 xl:grid-cols-3 w-full">
           <div className="py-8 px-6 bg-primary-100 rounded-xl w-full flex flex-col justify-between md:col-start-1 md:col-end-3 lg:col-end-auto lg:col-start-auto col-end-auto col-start-auto">

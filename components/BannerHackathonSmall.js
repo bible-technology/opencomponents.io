@@ -18,14 +18,14 @@ function BannerHackathon() {
   }, [])
 
   return (
-    <div className="flex flex-col lg:flex-row items-center rounded-xl bg-secondary-400 p-12">
-      <div className="basis-0 shrink flex-grow-[3] mb-6 lg:mb-0">
-        <div className="mb-6 md:mt-6 text-4xl font-bold text-gray-800 mt-12 md:mb-20 lg:text-5xl xl:text-6xl">
-          Open Components <br /> Hackathon 2023
+    <div className="flex flex-col lg:flex-row items-center rounded-xl bg-secondary-400 px-12 py-6">
+      <div className="basis-0 shrink flex-grow-[4] lg:flex-grow-[5] mb-4 lg:mb-0">
+        <div className="mb-6 text-4xl font-bold text-gray-800 mt-8 md:mt-4 md:mb-8 lg:text-4xl xl:text-5xl">
+          Open Components Hackathon&nbsp;2023
         </div>
         <div className="text-lg text-gray-700 md:text-xl">
           Presented by <span className="font-bold">ETEN&nbsp;Innovation&nbsp;Lab</span>
-          <div className="mt-10">
+          <div className="mt-6">
             <a
               target="_blank"
               href="https://eten.bible/"
@@ -33,7 +33,7 @@ function BannerHackathon() {
               rel="noreferrer"
             >
               <span className="bg-[#262626] inline-block py-2 px-4 rounded-md">
-                <Image src={eten_logo_dark} alt="eten_logo" width="196" height="60" />
+                <Image src={eten_logo_dark} alt="eten_logo" width="131" height="40" />
               </span>
             </a>
           </div>
