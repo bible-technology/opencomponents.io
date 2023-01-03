@@ -17,8 +17,9 @@ export default async function handle(req, res) {
 <p>Dear ${req.body.name},<br/>
 <br/>
 Thank you for signing up for the Open Components Hackathon 2023.<br/>
-<b>Learnathon</b>: February&nbsp;13&nbsp;-&nbsp;February&nbsp;17,&nbsp;2023<br/>
-<b>Hackathon</b>: February&nbsp;20&nbsp;-&nbsp;February&nbsp;24,&nbsp;2023</p>
+<b>Hackathon Theme</b>: Components for the Translation Resource Ecosystem<br/>
+<b>Learnathon (Online)</b>: February&nbsp;13&nbsp;-&nbsp;17,2023<br/>
+<b>Hackathon (Online/Multi-site)</b>: February&nbsp;20&nbsp;-&nbsp;24,2023</p>
 <p>Please <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NmNoNTNoa2RnNWNnbHFvdHQ3c2NucjVydjlfMjAyMzAyMTNUMTQwMDAwWiBiaW5jeS5qb2JieUB1bmZvbGRpbmd3b3JkLm9yZw&tmsrc=bincy.jobby%40unfoldingword.org&scp=ALL">click here</a> to add this event to your calendar. To learn more about the event schedule, please <a href="https://opencomponents.io/hackathon/schedule">click here</a>. We look forward to seeing you soon!</p>
 <p>Thanks,<br/>
 Chris Klapp, aka Klappy<br/>
