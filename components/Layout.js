@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 import { useRouter } from 'next/router'
 
@@ -18,9 +19,11 @@ export default function Layout({ fullwidth, children }) {
               <div className="text-center text-xl font-bold text-primary-600 mb-3 md:mb-0">
                 Open Components Hackathon 2023
               </div>
-              <div className="w-36 text-white py-1 text-center rounded-lg bg-primary-600 hover:bg-primary-700 active:shadow-xl select-none font-bold active:shadow-primary-700/23 cursor-pointer">
-                Coming Soon!
-              </div>
+              <Link href="/hackathon/register">
+                <a className="w-36 text-white py-1 text-center rounded-lg bg-primary-600 hover:bg-primary-700 active:shadow-xl select-none font-bold active:shadow-primary-700/23 cursor-pointer">
+                  Register Now!
+                </a>
+              </Link>
               <div className="w-14 h-14 hidden md:block relative">
                 <div className="w-16 h-16 -bottom-8 right-3 absolute">
                   <Image

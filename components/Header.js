@@ -49,7 +49,7 @@ function Header() {
         </svg>
       </div>
       <div className="text-text-600 hidden md:flex">
-        <div className="hidden gap-2 btn group">
+        <div className="flex gap-2 btn group">
           <div className="relative">
             <a className="cursor-pointer text-[#f15e59]">Hackathon 2023</a>
             <div className="absolute flex-col mt-2 p-3 shadow-md z-50 bg-white rounded-md hidden group-hover:flex">
@@ -152,17 +152,17 @@ function Header() {
             onClick={(e) => {
               e.stopPropagation()
             }}
-            className="btn cursor-pointer text-[#f15e59] hidden"
+            className="btn cursor-pointer text-[#f15e59]"
           >
             Hackathon 2023
           </a>
           <Link href="/hackathon/register">
-            <a className="hidden pl-8 whitespace-nowrap rounded-md text-text-500 hover:text-text-600 active:text-text-500">
+            <a className="pl-8 whitespace-nowrap rounded-md text-text-500 hover:text-text-600 active:text-text-500">
               Registration
             </a>
           </Link>
           <Link href="/hackathon/schedule">
-            <a className="hidden pl-8 whitespace-nowrap rounded-md text-text-500 hover:text-text-600 active:text-text-500">
+            <a className="pl-8 whitespace-nowrap rounded-md text-text-500 hover:text-text-600 active:text-text-500">
               Schedule
             </a>
           </Link>
