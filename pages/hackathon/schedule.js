@@ -7,8 +7,11 @@ export default function Schedule() {
   return (
     <div className="flex flex-col gap-10 mx-4 xl:gap-12">
       <Head>
-        <title>Open Components Ecosystem</title>
-        <meta name="description" content="Open Components Ecosystem" />
+        <title>Open Components Hackathon 2023</title>
+        <meta
+          name="description"
+          content="Open Components Hackathon 2023 In partnership with ETEN Innovation Lab"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

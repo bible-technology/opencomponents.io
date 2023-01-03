@@ -6,11 +6,12 @@ import Link from 'next/link'
 
 import { getCookie } from 'cookies-next'
 
-import uw_logo from '../../public/unfoldingword.svg'
-import tt_logo from '../../public/tt_logo.png'
 import RegistrationForm from '../../components/RegistrationForm'
 import Ticket from '../../components/Ticket'
 import BannerHackathon from '../../components/BannerHackathon'
+
+import uw_logo from '../../public/unfoldingword.svg'
+import tt_logo from '../../public/tt_logo.png'
 
 export default function Register({ user }) {
   const [currentUser, setCurrentUser] = useState(user)
