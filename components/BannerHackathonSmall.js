@@ -1,10 +1,11 @@
+import { useEffect, useState } from 'react'
+
 import Image from 'next/image'
 
 import slide1 from '../public/group.png'
 import slide2 from '../public/group2.png'
 import slide3 from '../public/hello_church_slider.png'
 import eten_logo_dark from '../public/eten_logo_dark.png'
-import { useEffect, useState } from 'react'
 
 function BannerHackathon() {
   const [image, setImage] = useState(1)
@@ -18,9 +19,9 @@ function BannerHackathon() {
   }, [])
 
   return (
-    <div className="flex flex-col lg:flex-row items-center rounded-xl bg-secondary-400 px-12 py-6">
+    <div className="flex flex-col lg:flex-row items-center rounded-xl bg-secondary-400 px-4 md:px-12 py-6">
       <div className="basis-0 shrink flex-grow-[4] lg:flex-grow-[5] mb-4 lg:mb-0">
-        <div className="mb-6 text-4xl font-bold text-gray-800 mt-8 md:mt-4 md:mb-8 lg:text-4xl xl:text-5xl">
+        <div className="mb-6 text-2xl sm:text-4xl font-bold text-gray-800 mt-8 md:mt-4 md:mb-8 lg:text-4xl xl:text-5xl">
           Open Components Hackathon&nbsp;2023
         </div>
         <div className="text-lg text-gray-700 md:text-xl">
