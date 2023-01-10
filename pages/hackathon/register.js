@@ -9,9 +9,7 @@ import { getCookie } from 'cookies-next'
 import RegistrationForm from '../../components/RegistrationForm'
 import Ticket from '../../components/Ticket'
 import BannerHackathon from '../../components/BannerHackathon'
-
-import uw_logo from '../../public/unfoldingword.svg'
-import tt_logo from '../../public/tt_logo.png'
+import Partners from '../../components/Partners'
 
 export default function Register({ user }) {
   const [currentUser, setCurrentUser] = useState(user)
@@ -209,37 +207,7 @@ export default function Register({ user }) {
         ) : (
           <Ticket email={currentUser} />
         )}
-        {['form', 'default'].includes(stateRegistration) ? (
-          <div className="self-start">
-            <div className="uppercase font-bold text-xl text-primary-700 mt-4 mb-6">
-              Partners
-            </div>
-            <div className="flex-wrap flex mt-6">
-              <div className="grayscale brightness-50 opacity-70 hover:opacity-100 hover:grayscale-0 hover:brightness-100 transition-all m-4">
-                <a
-                  target="_blank"
-                  href="https://unfoldingword.org"
-                  className="cursor-pointer"
-                  rel="noreferrer"
-                >
-                  <Image src={uw_logo} alt="uw_logo" width="228" height="40" />
-                </a>
-              </div>
-              <div className="grayscale brightness-50 opacity-70 hover:opacity-100 hover:grayscale-0 hover:brightness-100 transition-all m-4">
-                <a
-                  target="_blank"
-                  href="https://texttree.org"
-                  className="cursor-pointer"
-                  rel="noreferrer"
-                >
-                  <Image src={tt_logo} alt="tt_logo" width="145" height="40" />
-                </a>
-              </div>
-            </div>
-          </div>
-        ) : (
-          ''
-        )}
+        {['form', 'default'].includes(stateRegistration) ? <Partners /> : ''}
       </div>
     </div>
   )

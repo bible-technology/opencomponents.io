@@ -5,7 +5,7 @@ import Image from 'next/image'
 import slide1 from '../public/group.png'
 import slide2 from '../public/group2.png'
 import slide3 from '../public/hello_church_slider.png'
-import eten_logo_dark from '../public/eten_logo_dark.png'
+import eten_logo_dark from '../public/logo/eten_logo_dark.png'
 
 function BannerHackathon() {
   const [image, setImage] = useState(1)
