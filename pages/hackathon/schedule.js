@@ -1,9 +1,11 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { useState } from 'react'
 
 import BannerHackathonSmall from '../../components/BannerHackathonSmall'
 
 export default function Schedule() {
+  const [isShowModal, setIsShowModal] = useState(false)
   return (
     <div className="flex flex-col gap-10 mx-4 xl:gap-12">
       <Head>
@@ -16,6 +18,60 @@ export default function Schedule() {
       </Head>
 
       <BannerHackathonSmall />
+      <div
+        className={`fixed ${
+          isShowModal ? 'flex' : 'hidden'
+        } inset-0 bg-black bg-opacity-25 backdrop-blur-sm justify-center items-center`}
+        onClick={() => setIsShowModal((prev) => !prev)}
+      >
+        <div
+          onClick={(e) => e.stopPropagation()}
+          className="max-w-lg m-6 relative rounded-md bg-white shadow-md max-h-[90vh] overflow-auto p-6"
+        >
+          <div
+            className="absolute top-4 right-4 rounded border border-gray-300 w-8 h-8 flex justify-center items-center hover:bg-gray-200 cursor-pointer"
+            onClick={() => setIsShowModal((prev) => !prev)}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </div>
+          <div className="text-primary-600 text-2xl mb-4 font-bold">Summary*:</div>
+          <p className="text-text-800">
+            A Translation Resource Ecosystem for Bible translation is a comprehensive
+            system that includes all the tools, resources, and processes necessary for
+            accurately and effectively translating the Bible into different languages.
+            This ecosystem includes translation software, dictionaries and lexicons,
+            language resources, and guidelines for translation principles and practices.
+            It also involves a network of skilled translators, reviewers, and consultants
+            who work together to ensure the accuracy and clarity of the translated text.
+            <br />
+            <br />
+            The Translation Resource Ecosystem also includes processes for managing and
+            updating the translation resources over time, as well as strategies for
+            promoting and distributing the translated Bible to target audiences.
+            <br />
+            <br />
+            Overall, the Translation Resource Ecosystem is a vital component of any Bible
+            translation project, providing the resources and support needed to ensure that
+            the translation is faithful, accurate, and accessible to all.
+          </p>
+          <p className="text-sm mt-7 text-text-500">
+            * This summary was authored by ChatGPT.
+          </p>
+        </div>
+      </div>
       <div className="flex flex-col items-center">
         <div className="grid grid-cols-1 gap-5 mb-5 md:grid-cols-2 lg:grid-cols-3 md:mb-10 xl:grid-cols-3 w-full">
           <div className="py-8 px-6 bg-primary-100 rounded-xl w-full flex flex-col justify-between md:col-start-1 md:col-end-3 lg:col-end-auto lg:col-start-auto col-end-auto col-start-auto">
@@ -23,7 +79,12 @@ export default function Schedule() {
               Hackathon theme
             </div>
             <div className="mt-4 text-gray-700 text-lg sm:text-xl">
-              Components for the Translation Resource Ecosystem
+              <span
+                className="underline decoration-dashed cursor-help"
+                onClick={() => setIsShowModal((prev) => !prev)}
+              >
+                Components for the Translation Resource Ecosystem
+              </span>
             </div>
           </div>
           <div className="py-8 px-6 bg-primary-100 rounded-xl w-full flex flex-col justify-between">
