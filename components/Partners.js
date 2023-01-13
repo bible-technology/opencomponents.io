@@ -8,10 +8,10 @@ import eten_logo from '../public/logo/eten_logo.png'
 
 const orgs = [
   { logo: eten_logo, url: 'https://eten.bible/', w: 131 },
-  { logo: tt_logo, url: 'https://texttree.org', w: 145 },
-  { logo: ip_logo, url: 'https://idiomaspuentes.org/', w: 208 },
   { logo: uw_logo, url: 'https://unfoldingword.org', w: 228 },
+  { logo: ip_logo, url: 'https://idiomaspuentes.org/', w: 208 },
   { logo: bc_logo, url: 'https://bridgeconn.com/', w: 112 },
+  { logo: tt_logo, url: 'https://texttree.org', w: 145 },
 ]
 function Partners() {
   return (
