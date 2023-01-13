@@ -122,7 +122,7 @@ export default function Schedule() {
             <div className="pr-2 mt-4">
               <a
                 target="_blank"
-                href="https://discord.gg/ryAcyRwJ"
+                href="https://discord.gg/jtTRhEMH4q"
                 className="text-white inline-flex items-center bg-primary-600 cursor-pointer hover:bg-primary-700 py-2 px-3 rounded-md uppercase active:shadow-xl select-none active:shadow-primary-700/23"
                 rel="noreferrer"
               >
@@ -210,7 +210,7 @@ export default function Schedule() {
                 . If you&#39;d like to join an existing team, please{' '}
                 <a
                   target="_blank"
-                  href="https://discord.gg/ryAcyRwJ"
+                  href="https://discord.gg/jtTRhEMH4q"
                   className="text-primary-500 cursor-pointer hover:underline"
                   rel="noreferrer"
                 >
