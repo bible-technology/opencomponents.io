@@ -21,7 +21,7 @@ function Partners() {
       </div>
       <div className="flex-wrap flex mt-6">
         {orgs.map((org) => (
-          <div className="m-4" key={org.logo}>
+          <div className="m-4" key={org.url}>
             <a target="_blank" href={org.url} className="cursor-pointer" rel="noreferrer">
               <Image src={org.logo} alt={org.url} width={org.w} height="40" />
             </a>
