@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect, useCallback } from 'react'
+import { useState, useRef, useEffect } from 'react'
 
 import Image from 'next/image'
 import Link from 'next/link'
@@ -16,7 +16,6 @@ import oce_infographic_5 from '../public/about/oce_infographic_5.png'
 import Head from 'next/head'
 
 function About() {
-  const [isStickyMenu, setIsStickyMenu] = useState(false)
   const [refs, setRefs] = useState({})
   const parentRefs = useRef(null)
   const sidebar = useRef(null)
@@ -32,22 +31,6 @@ function About() {
   }, [])
 
   const scroll = useScrollTrack({ refs })
-
-  const setFixedSidebar = useCallback(() => {
-    if (!sidebar?.current) {
-      return
-    }
-    setIsStickyMenu(window.scrollY > sidebar?.current.getBoundingClientRect().top * 2)
-  }, [sidebar])
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      window.addEventListener('scroll', setFixedSidebar)
-    }
-    return () => {
-      window.removeEventListener('scroll', setFixedSidebar)
-    }
-  }, [setFixedSidebar])
 
   useEffect(() => {
     document.documentElement.classList.add('about')
@@ -277,7 +260,6 @@ function About() {
               height="315"
               src="https://www.youtube.com/embed/GUE7vIGmugk"
               title="YouTube video player"
-              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
