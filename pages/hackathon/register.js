@@ -48,7 +48,7 @@ export default function Register({ user }) {
                       viewBox="0 0 24 24"
                       strokeWidth="1.5"
                       stroke="currentColor"
-                      className="w-5 h-5 mr-3"
+                      className="w-5 h-5 mr-3 flex-shrink-0"
                     >
                       <path
                         strokeLinecap="round"
@@ -66,7 +66,7 @@ export default function Register({ user }) {
                       viewBox="0 0 24 24"
                       strokeWidth="1.5"
                       stroke="currentColor"
-                      className="w-5 h-5 mr-3"
+                      className="w-5 h-5 mr-3 flex-shrink-0"
                     >
                       <path
                         strokeLinecap="round"
@@ -97,7 +97,7 @@ export default function Register({ user }) {
                       viewBox="0 0 24 24"
                       strokeWidth="1.5"
                       stroke="currentColor"
-                      className="w-5 h-5 mr-3"
+                      className="w-5 h-5 mr-3 flex-shrink-0"
                     >
                       <path
                         strokeLinecap="round"
