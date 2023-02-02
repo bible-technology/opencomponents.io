@@ -10,6 +10,7 @@ import useApp from '../hooks/useApp'
 
 import { timeSince } from '../utils/helper'
 import useRepo from '../hooks/useRepo'
+import Head from 'next/head'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -48,6 +49,11 @@ function App({ address }) {
         <div> </div>
       ) : (
         <>
+          <Head>
+            <title>{repo.name} - App - Open Components Ecosystem</title>
+            <meta name="description" content={`${repo.name} - ${repo.description}`} />
+            <link rel="icon" href="/favicon.ico" />
+          </Head>
           <h1 className="uppercase font-bold text-3xl text-primary-600 md:text-4xl lg:text-5xl xl:text-6xl">
             {repo.name}
           </h1>

@@ -1,6 +1,13 @@
+import Head from 'next/head'
+
 const NotFound = () => {
   return (
     <div className="not-found container">
+      <Head>
+        <title>Error - Open Components Ecosystem</title>
+        <meta name="description" content="That page cannot be found" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div
         style={{ height: 'calc(100vh - 14rem)' }}
         className="max-w-full flex items-center justify-center mx-8"

@@ -13,6 +13,7 @@ import oce_infographic_2_mobile from '../public/about/oce_infographic_2_mobile.p
 import oce_infographic_3 from '../public/about/oce_infographic_3.png'
 import oce_infographic_4 from '../public/about/oce_infographic_4.png'
 import oce_infographic_5 from '../public/about/oce_infographic_5.png'
+import Head from 'next/head'
 
 function About() {
   const [isStickyMenu, setIsStickyMenu] = useState(false)
@@ -55,6 +56,14 @@ function About() {
 
   return (
     <div className="flex flex-col mb-16 text-center lg:gap-10 lg:text-start">
+      <Head>
+        <title>About - Open Components Ecosystem</title>
+        <meta
+          name="description"
+          content="Open Components decentralized technologies comprised of open source components that enable reuse of functionality outside of original context and expansion of functionality by integration of other components"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className="flex flex-col items-center border-b-2 border-dashed">
         <div className="text-2xl font-bold text-primary-600 scroll-m-32 md:mb-8 md:text-3xl lg:text-4xl xl:text-5xl">
           About

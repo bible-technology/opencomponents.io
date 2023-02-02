@@ -12,6 +12,7 @@ import useRepo from '../hooks/useRepo'
 
 import { timeSince } from '../utils/helper'
 import ComponentCard from './ComponentCard'
+import Head from 'next/head'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -62,6 +63,11 @@ function Component({ address }) {
         <div></div>
       ) : (
         <>
+          <Head>
+            <title>{repo.name} - Component - Open Components Ecosystem</title>
+            <meta name="description" content={`${repo.name} - ${repo.description}`} />
+            <link rel="icon" href="/favicon.ico" />
+          </Head>
           <h1 className="font-bold text-3xl text-primary-600 md:text-4xl lg:text-5xl xl:text-6xl">
             {repo.name}
           </h1>

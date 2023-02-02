@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -13,6 +14,16 @@ export default function ReactCompLibrary() {
   }
   return (
     <div className="container mx-auto md:px-1 lg:px-2 2xl:px-4">
+      <Head>
+        <title>
+          Starting a React Component Library at unfoldingWord - Open Components Ecosystem
+        </title>
+        <meta
+          name="description"
+          content="A React Component Library (RCL) is a great way to reuse code, speed up development and maintain a consistent UI/UX across different features and applications."
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <HeaderStaticPage config={HeaderConfig} />
       <div className="mx-auto md:px-10 lg:px-20 2xl:px-40 article">
         <figure>

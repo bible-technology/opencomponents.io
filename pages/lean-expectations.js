@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import HeaderStaticPage from '../components/HeaderStaticPage'
@@ -10,6 +11,14 @@ export default function LeanExpectations() {
   }
   return (
     <div className="container mx-auto md:px-1 lg:px-2 2xl:px-4">
+      <Head>
+        <title>Lean Expectations — PoC, Prototype, MVP - Open Components Ecosystem</title>
+        <meta
+          name="description"
+          content="For new software to have intrinsic value, it typically introduces innovative approaches to solving a problem. This can come in many forms but is usually improvements on functionality, usability or performance."
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <HeaderStaticPage config={HeaderConfig} />
       <div className="mx-auto md:px-10 lg:px-20 2xl:px-40 article">
         <br />

@@ -18,26 +18,14 @@ function Home() {
   const { data, isLoading, isError } = useNew()
   return (
     <>
-      {/* <div className="bg-secondary-400 mb-12 py-8">
-        <div className="container mx-auto px-5">
-          <div className="relative flex flex-col items-center">
-            <div className="relative sm:absolute right-0 top-[0.35rem] md:-top-[0.65rem] lg:-top-1 xl:top-1 w-14 md:w-24 h-14 md:h-24 mr-0 sm:mr-20 md:mr-20 lg:mr-48 xl:mr-64 2xl:mr-96">
-              <Image src={editor_black} alt="editor_black" width="90" height="90" />
-            </div>
-            <div className="text-center mb-6 text-2xl font-bold text-primary-600 md:mb-8 md:text-3xl lg:text-4xl xl:text-5xl md:w-3/5">
-              Open Components <br /> Hackathon 2023
-            </div>
-            <div className="w-36 text-white py-2.5 text-center rounded-lg bg-primary-600 hover:bg-primary-700 active:shadow-xl select-none font-bold active:shadow-primary-700/23 cursor-pointer">
-              Coming Soon!
-            </div>
-          </div>
-        </div>
-      </div> */}
       <div className="container mx-auto px-5 flex-grow">
         <div className="flex flex-col gap-10 mx-4 xl:gap-12">
           <Head>
             <title>Open Components Ecosystem</title>
-            <meta name="description" content="Open Components Ecosystem" />
+            <meta
+              name="description"
+              content="Open Components are Reusable Building Blocks for Bible Technology"
+            />
             <link rel="icon" href="/favicon.ico" />
           </Head>
           <div className="flex flex-col items-center border-b-2 border-dashed">

@@ -7,10 +7,19 @@ import search from '../public/search.svg'
 import editor from '../public/editor.svg'
 import search2 from '../public/search2.svg'
 import editor2 from '../public/editor2.svg'
+import Head from 'next/head'
 
 function GetStarted() {
   return (
     <div className="flex flex-col gap-5 mb-16 lg:gap-10">
+      <Head>
+        <title>Get Started - Open Components Ecosystem</title>
+        <meta
+          name="description"
+          content="On this page, you can learn how to start using Open Components to develop Bible applications."
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className="flex flex-col items-center border-b-2 border-dashed">
         <div className="text-2xl font-bold text-primary-600 md:text-3xl lg:text-4xl xl:text-5xl">
           Get started
