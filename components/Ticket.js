@@ -30,7 +30,7 @@ function Ticket({ email }) {
               {email}
             </div>
             <div className="flex flex-col flex-wrap mt-8 md:flex-row w-full">
-              <div className="flex-1">
+              <div className="flex-1 mr-5">
                 <div className="uppercase text-primary-700 font-bold text-lg mb-4">
                   Learnathon
                 </div>
@@ -41,7 +41,7 @@ function Ticket({ email }) {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="w-6 h-6"
+                    className="w-6 h-6 flex-shrink-0"
                   >
                     <path
                       strokeLinecap="round"
@@ -58,7 +58,7 @@ function Ticket({ email }) {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="w-6 h-6"
+                    className="w-6 h-6 flex-shrink-0"
                   >
                     <path
                       strokeLinecap="round"
@@ -75,7 +75,7 @@ function Ticket({ email }) {
                 </div>
               </div>
 
-              <div className="flex-1 mt-6 lg:mt-0">
+              <div className="flex-1 mt-6 lg:mt-0 mr-5">
                 <div className="uppercase font-bold text-primary-700 text-lg mb-4">
                   Hackathon
                 </div>
@@ -86,7 +86,7 @@ function Ticket({ email }) {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="w-6 h-6"
+                    className="w-6 h-6 flex-shrink-0"
                   >
                     <path
                       strokeLinecap="round"
@@ -103,7 +103,7 @@ function Ticket({ email }) {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="w-6 h-6"
+                    className="w-6 h-6 flex-shrink-0"
                   >
                     <path
                       strokeLinecap="round"
@@ -117,8 +117,8 @@ function Ticket({ email }) {
                     />
                   </svg>
                   <span>
-                    Orlando - Florida, Arlington - Texas, New Delhi, Avignon - France,
-                    Online
+                    Orlando&nbsp;-&nbsp;Florida, Arlington&nbsp;-&nbsp;Texas,
+                    New&nbsp;Delhi, Avignon&nbsp;-&nbsp;France, Online
                   </span>
                 </div>
               </div>
