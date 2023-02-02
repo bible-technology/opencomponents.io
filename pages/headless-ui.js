@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Gist from 'react-gist'
 
 import HeaderStaticPage from '../components/HeaderStaticPage'
+import Head from 'next/head'
 
 const HeaderConfig = {
   title: 'Headless UI Components: Creating re-usable logic without thinking about design',
@@ -14,6 +15,17 @@ const HeaderConfig = {
 export default function HeadlessUI() {
   return (
     <div className="container mx-auto md:px-1 lg:px-2 2xl:px-4">
+      <Head>
+        <title>
+          Headless UI Components: Creating re-usable logic without thinking about design -
+          Open Components Ecosystem
+        </title>
+        <meta
+          name="description"
+          content="A headless user interface component is a component that offers maximum visual flexibility by providing no interface. This might sound like providing a user interface pattern without providing a user interface"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <HeaderStaticPage config={HeaderConfig} />
       <div className="mx-auto md:px-10 lg:px-20 2xl:px-40 article">
         <br />

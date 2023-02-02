@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 import uw_logo from '../public/logo/unfoldingword.svg'
-import tt_logo from '../public/logo/tt_logo.png'
+import tt_logo from '../public/logo/tt_logo.svg'
 import bc_logo from '../public/logo/logo-white@2x.png'
 import ip_logo from '../public/logo/idiomaspuentes-logo.svg'
 import eten_logo from '../public/logo/eten_logo.png'

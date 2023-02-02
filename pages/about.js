@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect, useCallback } from 'react'
+import { useState, useRef, useEffect } from 'react'
 
 import Image from 'next/image'
 import Link from 'next/link'
@@ -13,9 +13,9 @@ import oce_infographic_2_mobile from '../public/about/oce_infographic_2_mobile.p
 import oce_infographic_3 from '../public/about/oce_infographic_3.png'
 import oce_infographic_4 from '../public/about/oce_infographic_4.png'
 import oce_infographic_5 from '../public/about/oce_infographic_5.png'
+import Head from 'next/head'
 
 function About() {
-  const [isStickyMenu, setIsStickyMenu] = useState(false)
   const [refs, setRefs] = useState({})
   const parentRefs = useRef(null)
   const sidebar = useRef(null)
@@ -32,22 +32,6 @@ function About() {
 
   const scroll = useScrollTrack({ refs })
 
-  const setFixedSidebar = useCallback(() => {
-    if (!sidebar?.current) {
-      return
-    }
-    setIsStickyMenu(window.scrollY > sidebar?.current.getBoundingClientRect().top * 2)
-  }, [sidebar])
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      window.addEventListener('scroll', setFixedSidebar)
-    }
-    return () => {
-      window.removeEventListener('scroll', setFixedSidebar)
-    }
-  }, [setFixedSidebar])
-
   useEffect(() => {
     document.documentElement.classList.add('about')
     return () => document.documentElement.classList.remove('about')
@@ -55,6 +39,14 @@ function About() {
 
   return (
     <div className="flex flex-col mb-16 text-center lg:gap-10 lg:text-start">
+      <Head>
+        <title>About - Open Components Ecosystem</title>
+        <meta
+          name="description"
+          content="Open Components decentralized technologies comprised of open source components that enable reuse of functionality outside of original context and expansion of functionality by integration of other components"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className="flex flex-col items-center border-b-2 border-dashed">
         <div className="text-2xl font-bold text-primary-600 scroll-m-32 md:mb-8 md:text-3xl lg:text-4xl xl:text-5xl">
           About
@@ -268,7 +260,6 @@ function About() {
               height="315"
               src="https://www.youtube.com/embed/GUE7vIGmugk"
               title="YouTube video player"
-              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
