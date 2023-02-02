@@ -116,7 +116,10 @@ function Ticket({ email }) {
                       d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
                     />
                   </svg>
-                  <span>Orlando, New Delhi, France, Online</span>
+                  <span>
+                    Orlando - Florida, Arlington - Texas, New Delhi, Avignon - France,
+                    Online
+                  </span>
                 </div>
               </div>
               <div className="justify-between mt-6 xl:mt-0 flex flex-col">
