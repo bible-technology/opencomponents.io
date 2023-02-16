@@ -535,7 +535,7 @@ export default function ReactCompLibrary() {
         <br />
         <Gist id="8dc37fff80a9be7eefcd226c02e70b69" />
         <div className="description-gist">
-          <p>package.jsons</p>
+          <p>package.json</p>
         </div>
         <br />
         <p>
