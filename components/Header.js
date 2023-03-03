@@ -49,7 +49,7 @@ function Header() {
         </svg>
       </div>
       <div className="text-text-600 hidden md:flex">
-        <div className="flex gap-2 btn group">
+        {/* <div className="flex gap-2 btn group">
           <div className="relative">
             <a className="cursor-pointer text-[#f15e59]">Hackathon 2023</a>
             <div className="absolute flex-col mt-2 p-3 shadow-md z-50 bg-white rounded-md hidden group-hover:flex">
@@ -68,7 +68,7 @@ function Header() {
             height="4"
             className="group-hover:rotate-180"
           />
-        </div>
+        </div> */}
         <Link href="/about">
           <a className="btn-gray">About</a>
         </Link>
