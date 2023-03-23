@@ -69,6 +69,26 @@ function Header() {
             className="group-hover:rotate-180"
           />
         </div> */}
+        <div className="flex gap-2 btn group">
+          <div className="relative">
+            <a className="cursor-pointer">Events</a>
+            <div className="absolute flex-col mt-2 p-3 shadow-md z-50 bg-white rounded-md hidden group-hover:flex">
+              <Link href="/events/hackathon2023">
+                <a className="btn-gray">Hackathon 2023</a>
+              </Link>
+              {/* <Link href="/events/hackathon2023">
+                <a className="btn-gray">Hackathon 2022</a>
+              </Link> */}
+            </div>
+          </div>
+          <Image
+            src={Chevron}
+            alt="show more"
+            width="6"
+            height="4"
+            className="group-hover:rotate-180"
+          />
+        </div>
         <Link href="/about">
           <a className="btn-gray">About</a>
         </Link>

@@ -46,7 +46,7 @@ function GetStarted() {
             </li>
             <li>
               Check the{' '}
-              <Link href="https://opencomponents.io/The%20Open%20Components%20Ecosystem%20-%20draft%204.pdf">
+              <Link href="/The%20Open%20Components%20Ecosystem%20-%20draft%204.pdf">
                 <a target="_blank" className="underline-custom">
                   whitepaper
                 </a>

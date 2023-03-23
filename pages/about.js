@@ -237,7 +237,7 @@ function About() {
             OCE Whitepaper
           </p>
           <div className="flex justify-center mt-10 mb-7 lg:my-20">
-            <Link href="https://opencomponents.io/The%20Open%20Components%20Ecosystem%20-%20draft%204.pdf">
+            <Link href="/The%20Open%20Components%20Ecosystem%20-%20draft%204.pdf">
               <a
                 target="_blank"
                 className="flex justify-center rounded-lg gap-2.5 py-2 w-80 bg-text-600 text-white scroll-m-14 hover:bg-text-800 active:shadow-xl active:shadow-primary-700/23"

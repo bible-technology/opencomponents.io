@@ -124,7 +124,7 @@ function Home() {
                   <div className="text-justify text-text-600 group-hover:text-black">
                     Find out what the Open Component Ecosystem (OCE) is all about. To
                     learn about the concept behind the OCE, you can check out our{' '}
-                    <Link href="https://opencomponents.io/The%20Open%20Components%20Ecosystem%20-%20draft%204.pdf">
+                    <Link href="/The%20Open%20Components%20Ecosystem%20-%20draft%204.pdf">
                       <a
                         target="_blank"
                         className="font-bold underline decoration-2 underline-offset-4"
