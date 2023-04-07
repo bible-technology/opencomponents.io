@@ -168,7 +168,7 @@ function Header() {
         </div>
 
         <div onClick={closeNavbar} className="flex flex-col gap-5">
-          <a
+          {/* <a
             onClick={(e) => {
               e.stopPropagation()
             }}
@@ -184,6 +184,19 @@ function Header() {
           <Link href="/hackathon/schedule">
             <a className="pl-8 whitespace-nowrap rounded-md text-text-500 hover:text-text-600 active:text-text-500">
               Schedule
+            </a>
+          </Link> */}
+          <a
+            onClick={(e) => {
+              e.stopPropagation()
+            }}
+            className="btn cursor-pointer"
+          >
+            Events
+          </a>
+          <Link href="/events/hackathon2023">
+            <a className="pl-8 whitespace-nowrap rounded-md text-text-500 hover:text-text-600 active:text-text-500">
+              Hackathon 2023
             </a>
           </Link>
           <Link href="/about">

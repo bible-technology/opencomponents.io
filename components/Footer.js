@@ -37,9 +37,9 @@ function Footer() {
             <Link href="/faq">
               <a className="btn-transparent hidden">FAQ</a>
             </Link>
-            <Link href="/hackathon/register">
+            {/* <Link href="/hackathon/register">
               <a className="btn-transparent">Hackathon 2023</a>
-            </Link>
+            </Link> */}
           </div>
         </div>
 
