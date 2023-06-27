@@ -9,8 +9,9 @@ const client = new ApolloClient({
 })
 
 export default async function handler(req, res) {
+  let result = []
   try {
-    const result = await client.query({
+    result = await client.query({
       query: gql`
         {
           search(
@@ -57,7 +58,11 @@ export default async function handler(req, res) {
         }
       `,
     })
-
+  } catch (error) {
+    return res.status(404).json(error)
+  }
+  let apps = {}
+  try {
     const appsArr = await prisma.repo.findMany({
       take: 100,
       orderBy: {
@@ -77,15 +82,14 @@ export default async function handler(req, res) {
         logo: true,
       },
     })
-    let apps = {}
     if (appsArr.length > 0) {
       for (let app of appsArr) {
         apps[app.repo] = app.logo
       }
     }
-
-    res.status(200).json({ git: result.data.search, db: apps })
   } catch (error) {
-    res.status(404).json(error)
+    // res.status(404).json(error)
+  } finally {
+    res.status(200).json({ git: result?.data?.search, db: apps })
   }
 }

@@ -68,7 +68,7 @@ function Labels({ full = false, labels }) {
                 key={index}
                 label={el}
                 onClick={() => handleClick(el)}
-                isActive={savedLabels.includes(el)}
+                isActive={savedLabels?.includes(el)}
               />
             )
           })}
