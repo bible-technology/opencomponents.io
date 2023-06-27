@@ -9,7 +9,7 @@ export default async function handle(req, res) {
       try {
         sendgrid.setApiKey(process.env.SG_API)
         await sendgrid.send({
-          to: 'foxprogs@gmail.com',
+          to: 'info@opencomponents.io',
           from: process.env.SG_FROM,
           subject: `Open Components - Contact Us!`,
           html: `<div style="padding:8px;max-width:800px;font-size:1.2rem;">
