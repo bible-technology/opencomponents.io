@@ -28,15 +28,18 @@ function Footer() {
             <Link href="/about">
               <a className="btn-transparent">About</a>
             </Link>
+            <Link href="/contact-us">
+              <a className="btn-transparent">Contact Us</a>
+            </Link>
             <Link href="/components">
               <a className="btn-transparent">Explore</a>
             </Link>
             <Link href="/get-started">
               <a className="btn-transparent">Get started</a>
             </Link>
-            <Link href="/faq">
+            {/* <Link href="/faq">
               <a className="btn-transparent hidden">FAQ</a>
-            </Link>
+            </Link> */}
             {/* <Link href="/hackathon/register">
               <a className="btn-transparent">Hackathon 2023</a>
             </Link> */}

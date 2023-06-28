@@ -12,6 +12,7 @@ import ascent from '../public/ascent.svg'
 import introduction from '../public/introduction.svg'
 import explore from '../public/explore.svg'
 import discord_hero from '../public/discord_hero.svg'
+import FeedbackForm from '../components/FeedbackForm'
 
 function Home() {
   const router = useRouter()
@@ -291,7 +292,7 @@ function Home() {
             </div>
           </div>
 
-          <div className="flex items-center flex-col-reverse mx-10 sm:mx-28 mb-20 text-center md:text-start md:mx-0 md:flex-row">
+          <div className="flex items-center flex-col-reverse mx-10 sm:mx-28 text-center md:text-start md:mx-0 md:flex-row">
             <div className="flex flex-col justify-center gap-5 lg:w-1/2 2xl:w-7/12">
               <div className="text-primary-600">
                 <Link href="https://discord.com/invite/auJb4H9ezx">
@@ -332,6 +333,13 @@ function Home() {
             <div className="justify-center flex lg:w-1/2 2xl:w-5/12">
               <Image src={discord_hero} alt="discord_hero" width="304" height="295" />
             </div>
+          </div>
+          <div className="feedback-block">
+            <h1 className="text-center pt-5 font-bold text-3xl lg:text-4xl xl:text-5xl text-primary-600">
+              Contact Us
+            </h1>
+
+            <FeedbackForm />
           </div>
         </div>
       </div>
