@@ -89,25 +89,9 @@ function Header() {
             className="group-hover:rotate-180"
           />
         </div>
-        <div className="flex gap-2 btn group">
-          <div className="relative">
-            <Link href="/about">
-              <a className="cursor-pointer">About</a>
-            </Link>
-            <div className="absolute flex-col mt-2 p-3 shadow-md z-50 bg-white rounded-md hidden group-hover:flex">
-              <Link href="/contact-us">
-                <a className="btn-gray">Contact Us</a>
-              </Link>
-            </div>
-          </div>
-          <Image
-            src={Chevron}
-            alt="show more"
-            width="6"
-            height="4"
-            className="group-hover:rotate-180"
-          />
-        </div>
+        <Link href="/about">
+          <a className="btn-gray">About</a>
+        </Link>
         <div className="flex gap-2 btn group">
           <div className="relative">
             <a className="cursor-pointer">Explore</a>
@@ -218,11 +202,6 @@ function Header() {
           <Link href="/about">
             <a className="btn cursor-pointer">About</a>
           </Link>
-          <Link href="/contact-us">
-            <a className="pl-8 whitespace-nowrap rounded-md text-text-500 hover:text-text-600 active:text-text-500">
-              Contact Us
-            </a>
-          </Link>
           <a
             onClick={(e) => {
               e.stopPropagation()
@@ -243,6 +222,9 @@ function Header() {
           </Link>
           <Link href="/get-started">
             <a className="btn-gray">Get started</a>
+          </Link>
+          <Link href="/contact-us">
+            <a className="btn cursor-pointer">Contact Us</a>
           </Link>
           <Link href="/faq">
             <a className="btn-gray hidden">FAQ</a>
