@@ -4,6 +4,14 @@ export default async function handle(req, res) {
   if (process.env.SG_API === '') {
     return res.status(200).json({ success: true })
   }
+  // <p>
+  //   To add the Learnathon to your google calendar,{' '}
+  //   <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NmNoNTNoa2RnNWNnbHFvdHQ3c2NucjVydjlfMjAyMzAyMTNUMTQwMDAwWiBjX2VhY2RmYzkxY2E1ZjFmOWZmODAzZWNkZTliNzMzZDBjODU0ZjU4YjQ3MWNhOThkM2FkOGMxMDlkNjExMzgyY2JAZw&tmsrc=c_eacdfc91ca5f1f9ff803ecde9b733d0c854f58b471ca98d3ad8c109d611382cb%40group.calendar.google.com&scp=ALL">
+  //     click here
+  //   </a>
+  //   .
+  // </p>
+
   switch (req.method) {
     case 'POST':
       try {
@@ -22,7 +30,6 @@ Thank you for signing up for the 2024 Open Components Hackathon.<br/>
 <b>Learnathon</b> (Online): <b>February&nbsp;26&nbsp;- March&nbsp;1,&nbsp;2024</b><br/>
 <b>Hackathon</b> (Online/Multi-site): <b>March&nbsp;4&nbsp;-&nbsp;8,&nbsp;2024</b></p>
 <p>If you have registered as an active participant, please ensure you are part of a team. If you'd like to create a new team, please fill out a <a href="https://forms.gle/VbeTG472AKbhpLnw9">form</a>. If you'd like to join an existing team, please reach out to other participants on <a href="https://discord.gg/9mZVrnn83z">Discord</a>.</p>
-<p>To add the Learnathon  to your google calendar, <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NmNoNTNoa2RnNWNnbHFvdHQ3c2NucjVydjlfMjAyMzAyMTNUMTQwMDAwWiBjX2VhY2RmYzkxY2E1ZjFmOWZmODAzZWNkZTliNzMzZDBjODU0ZjU4YjQ3MWNhOThkM2FkOGMxMDlkNjExMzgyY2JAZw&tmsrc=c_eacdfc91ca5f1f9ff803ecde9b733d0c854f58b471ca98d3ad8c109d611382cb%40group.calendar.google.com&scp=ALL">click here</a>.</p>
 <p>You can visit our <a href="https://opencomponents.io/hackathon/schedule">hackathon site</a> to learn more about the event. We look forward to seeing you soon!
 </p>
 <p>Thanks,<br/>
