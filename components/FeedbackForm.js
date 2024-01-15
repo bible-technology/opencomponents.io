@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 import axios from 'axios'
 
-import { ChatAlt2Icon } from '@heroicons/react/solid'
+import { ChatBubbleLeftRightIcon } from '@heroicons/react/20/solid'
 
 function FeedbackForm() {
   const [name, setName] = useState('')
@@ -39,7 +39,7 @@ function FeedbackForm() {
     <div className="text-md mt-3 md:mt-8 text-text-800 md:text-lg flex justify-center">
       {formState === 'sended' ? (
         <div className="my-6 mx-2 p-5 flex flex-col items-center text-2xl">
-          <ChatAlt2Icon
+          <ChatBubbleLeftRightIcon
             className="h-24 w-24 md:h-56 md:w-56 text-primary-600"
             aria-hidden="true"
           />

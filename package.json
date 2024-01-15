@@ -16,16 +16,16 @@
     "seed": "dotenv -e .env.local -- npx prisma migrate dev"
   },
   "dependencies": {
-    "@apollo/client": "^3.7.16",
-    "@headlessui/react": "^1.7.15",
-    "@heroicons/react": "^1.0.6",
+    "@apollo/client": "^3.8.9",
+    "@headlessui/react": "^1.7.18",
+    "@heroicons/react": "^2.1.1",
     "@prisma/client": "4.2.0",
     "@sendgrid/mail": "^7.7.0",
-    "axios": "^1.4.0",
+    "axios": "^1.6.5",
     "cookies-next": "^2.1.2",
-    "github-markdown-css": "^5.2.0",
-    "graphql": "^16.7.1",
-    "highlight.js": "^11.8.0",
+    "github-markdown-css": "^5.5.0",
+    "graphql": "^16.8.1",
+    "highlight.js": "^11.9.0",
     "next": "12.2.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -41,15 +41,15 @@
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
-    "autoprefixer": "^10.4.14",
+    "autoprefixer": "^10.4.16",
     "dotenv-cli": "^6.0.0",
     "eslint": "8.22.0",
     "eslint-config-next": "12.2.3",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "postcss": "^8.4.24",
+    "postcss": "^8.4.33",
     "prettier": "^2.8.8",
     "prisma": "4.2.0",
-    "tailwindcss": "^3.3.2"
+    "tailwindcss": "^3.4.1"
   }
 }

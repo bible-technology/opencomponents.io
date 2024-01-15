@@ -9,16 +9,13 @@ export default function Schedule() {
   return (
     <div className="flex flex-col gap-10 mx-4 xl:gap-12">
       <Head>
-        <title>Schedule Open Components Hackathon 2023</title>
-        <meta
-          name="description"
-          content="Open Components Hackathon 2023 In partnership with ETEN Innovation Lab"
-        />
+        <title>Schedule Open Components Hackathon 2024</title>
+        <meta name="description" content="Open Components Hackathon 2024" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <BannerHackathonSmall />
-      <div
+      {/* <div
         className={`fixed ${
           isShowModal ? 'flex' : 'hidden'
         } inset-0 bg-black bg-opacity-25 backdrop-blur-sm justify-center items-center`}
@@ -71,7 +68,7 @@ export default function Schedule() {
             * This summary was authored by ChatGPT.
           </p>
         </div>
-      </div>
+      </div> */}
       <div className="flex flex-col items-center">
         <div className="grid grid-cols-1 gap-5 mb-5 md:grid-cols-2 lg:grid-cols-3 md:mb-10 xl:grid-cols-3 w-full">
           <div className="py-8 px-6 bg-primary-100 rounded-xl w-full flex flex-col justify-between md:col-start-1 md:col-end-3 lg:col-end-auto lg:col-start-auto col-end-auto col-start-auto">
@@ -80,10 +77,10 @@ export default function Schedule() {
             </div>
             <div className="mt-4 text-gray-700 text-lg sm:text-xl">
               <span
-                className="underline decoration-dashed cursor-help"
-                onClick={() => setIsShowModal((prev) => !prev)}
+                className=""
+                // onClick={() => setIsShowModal((prev) => !prev)}
               >
-                Components for the Translation Resource Ecosystem
+                Multi-modal community checking solutions
               </span>
             </div>
           </div>
@@ -122,7 +119,7 @@ export default function Schedule() {
             <div className="pr-2 mt-4">
               <a
                 target="_blank"
-                href="https://discord.gg/jtTRhEMH4q"
+                href="https://discord.gg/9mZVrnn83z"
                 className="text-white inline-flex items-center bg-primary-600 cursor-pointer hover:bg-primary-700 py-2 px-3 rounded-md uppercase active:shadow-xl select-none active:shadow-primary-700/23"
                 rel="noreferrer"
               >
@@ -175,7 +172,7 @@ export default function Schedule() {
                 Register
               </td>
               <td className="border border-slate-300 py-1 px-2 md:py-2 md:px-3">
-                Jan&nbsp;6th&nbsp;- Feb&nbsp;6th
+                Jan&nbsp;17th&nbsp;- Feb&nbsp;26th
               </td>
               <td className="border hidden lg:table-cell border-slate-300 py-1 px-2 md:py-2 md:px-3"></td>
               <td className="border border-slate-300 py-1 px-2 md:py-2 md:px-3">
@@ -191,7 +188,7 @@ export default function Schedule() {
                 2
               </td>
               <td className="border border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
-                Create team or Join existing team
+                Create a team or Join an existing team
               </td>
               <td className="border border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3"></td>
               <td className="border hidden lg:table-cell border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3"></td>
@@ -210,7 +207,7 @@ export default function Schedule() {
                 . If you&#39;d like to join an existing team, please{' '}
                 <a
                   target="_blank"
-                  href="https://discord.gg/jtTRhEMH4q"
+                  href="https://discord.gg/9mZVrnn83z"
                   className="text-primary-500 cursor-pointer hover:underline"
                   rel="noreferrer"
                 >
@@ -241,7 +238,7 @@ export default function Schedule() {
                 Learnathon Kick off
               </td>
               <td className="border border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
-                Feb&nbsp;13th
+                Feb&nbsp;26th
                 <div className="block lg:hidden">9AM&nbsp;- 11AM&nbsp;EST</div>
               </td>
               <td className="border hidden lg:table-cell border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
@@ -259,7 +256,7 @@ export default function Schedule() {
                 Learn with your team
               </td>
               <td className="border border-slate-300 py-1 px-2 md:py-2 md:px-3">
-                Feb&nbsp;13&nbsp;- Feb&nbsp;17th
+                Feb&nbsp;26th&nbsp;- March&nbsp;1st
               </td>
               <td className="border hidden lg:table-cell border-slate-300 py-1 px-2 md:py-2 md:px-3"></td>
               <td className="border border-slate-300 py-1 px-2 md:py-2 md:px-3">
@@ -274,7 +271,7 @@ export default function Schedule() {
                 Learning presentations
               </td>
               <td className="border border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
-                Feb&nbsp;14&nbsp;- Feb&nbsp;16th
+                Feb&nbsp;27th&nbsp;- March&nbsp;1st
                 <div className="block lg:hidden">9AM&nbsp;- 11AM&nbsp;EST</div>
               </td>
               <td className="border hidden lg:table-cell border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
@@ -293,7 +290,7 @@ export default function Schedule() {
                 Hackathon Kick off
               </td>
               <td className="border border-slate-300 py-1 px-2 md:py-2 md:px-3">
-                Feb&nbsp;20th
+                March&nbsp;4th
                 <div className="block lg:hidden">9AM&nbsp;- 11AM&nbsp;EST</div>
               </td>
               <td className="border hidden lg:table-cell border-slate-300 py-1 px-2 md:py-2 md:px-3">
@@ -311,7 +308,7 @@ export default function Schedule() {
                 Hack with your team
               </td>
               <td className="border border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
-                Feb&nbsp;20&nbsp;- Feb&nbsp;23
+                March&nbsp;1st&nbsp;- March&nbsp;8th
               </td>
               <td className="border hidden lg:table-cell border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3"></td>
               <td className="border border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
@@ -326,7 +323,7 @@ export default function Schedule() {
                 Demo your Hack
               </td>
               <td className="border border-slate-300 py-1 px-2 md:py-2 md:px-3">
-                Feb&nbsp;24th
+                March&nbsp;8th
                 <div className="block lg:hidden">9AM&nbsp;- 11AM&nbsp;EST</div>
               </td>
               <td className="border hidden lg:table-cell border-slate-300 py-1 px-2 md:py-2 md:px-3">

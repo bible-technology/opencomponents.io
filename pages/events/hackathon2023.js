@@ -6,7 +6,7 @@ import HeaderStaticPage from '../../components/HeaderStaticPage'
 
 import Download from '../../public/download.svg'
 
-export default function LeanExpectations() {
+export default function Hackathon2023() {
   const HeaderConfig = {
     title: 'Hackathon 2023',
     name: '',

@@ -29,7 +29,7 @@ function Ticket({ email }) {
             <div className="text-center lg:text-left text-primary-700 text-base md:text-xl font-bold">
               {email}
             </div>
-            <div className="flex flex-col flex-wrap mt-8 md:flex-row w-full">
+            <div className="flex flex-col flex-wrap mt-8 md:flex-row md:items-baseline w-full">
               <div className="flex-1 mr-5">
                 <div className="uppercase text-primary-700 font-bold text-lg mb-4">
                   Learnathon
@@ -49,7 +49,7 @@ function Ticket({ email }) {
                       d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
                     />
                   </svg>
-                  <span>February&nbsp;13&nbsp;-&nbsp;17,&nbsp;2023</span>
+                  <span>February&nbsp;26&nbsp;- March&nbsp;1,&nbsp;2024</span>
                 </div>
                 <div className="text-sm flex flex-row space-x-2 items-center">
                   <svg
@@ -94,7 +94,7 @@ function Ticket({ email }) {
                       d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
                     />
                   </svg>
-                  <span>February&nbsp;20&nbsp;-&nbsp;24,&nbsp;2023</span>
+                  <span>March&nbsp;4&nbsp;-&nbsp;8,&nbsp;2024</span>
                 </div>
                 <div className="text-sm flex flex-row space-x-2 items-center">
                   <svg
@@ -117,8 +117,7 @@ function Ticket({ email }) {
                     />
                   </svg>
                   <span>
-                    Orlando&nbsp;-&nbsp;Florida, Arlington&nbsp;-&nbsp;Texas,
-                    New&nbsp;Delhi, Avignon&nbsp;-&nbsp;France, Online
+                    Orlando&nbsp;-&nbsp;Florida, New&nbsp;Delhi, Switzerland, Online
                   </span>
                 </div>
               </div>
@@ -142,7 +141,7 @@ function Ticket({ email }) {
                     Schedule
                   </a>
                 </Link>
-                <Link href="https://discord.gg/jtTRhEMH4q">
+                <Link href="https://discord.gg/9mZVrnn83z">
                   <a
                     target="_blank"
                     className="inline-flex whitespace-nowrap py-2 px-4 gap-2 text-base rounded-lg border border-primary-600 text-primary-600 hover:bg-secondary-400 active:shadow-xl active:shadow-primary-700/23 md:px-4 md:gap-1 lg:px-6 lg:gap-2 mt-2"

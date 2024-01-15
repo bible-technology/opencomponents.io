@@ -49,9 +49,9 @@ function Header() {
         </svg>
       </div>
       <div className="text-text-600 hidden md:flex">
-        {/* <div className="flex gap-2 btn group">
+        <div className="flex gap-2 btn group">
           <div className="relative">
-            <a className="cursor-pointer text-[#f15e59]">Hackathon 2023</a>
+            <a className="cursor-pointer text-[#f15e59]">Hackathon 2024</a>
             <div className="absolute flex-col mt-2 p-3 shadow-md z-50 bg-white rounded-md hidden group-hover:flex">
               <Link href="/hackathon/register">
                 <a className="btn-gray">Registration</a>
@@ -68,7 +68,7 @@ function Header() {
             height="4"
             className="group-hover:rotate-180"
           />
-        </div> */}
+        </div>
         <div className="flex gap-2 btn group">
           <div className="relative">
             <a className="cursor-pointer">Events</a>
@@ -76,8 +76,8 @@ function Header() {
               <Link href="/events/hackathon2023">
                 <a className="btn-gray">Hackathon 2023</a>
               </Link>
-              {/* <Link href="/events/hackathon2023">
-                <a className="btn-gray">Hackathon 2022</a>
+              {/* <Link href="/events/hackathon2024">
+                <a className="btn-gray">Hackathon 2024</a>
               </Link> */}
             </div>
           </div>
@@ -168,13 +168,13 @@ function Header() {
         </div>
 
         <div onClick={closeNavbar} className="flex flex-col gap-5">
-          {/* <a
+          <a
             onClick={(e) => {
               e.stopPropagation()
             }}
             className="btn cursor-pointer text-[#f15e59]"
           >
-            Hackathon 2023
+            Hackathon 2024
           </a>
           <Link href="/hackathon/register">
             <a className="pl-8 whitespace-nowrap rounded-md text-text-500 hover:text-text-600 active:text-text-500">
@@ -185,7 +185,7 @@ function Header() {
             <a className="pl-8 whitespace-nowrap rounded-md text-text-500 hover:text-text-600 active:text-text-500">
               Schedule
             </a>
-          </Link> */}
+          </Link>
           <a
             onClick={(e) => {
               e.stopPropagation()

@@ -3,7 +3,7 @@ import { Fragment, useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 
 import { Listbox, Transition } from '@headlessui/react'
-import { CheckIcon, ChevronDownIcon, XIcon } from '@heroicons/react/solid'
+import { CheckIcon, ChevronDownIcon, XMarkIcon } from '@heroicons/react/20/solid'
 
 export default function Filter({ type, multiple, values }) {
   const router = useRouter()
@@ -121,7 +121,7 @@ export default function Filter({ type, multiple, values }) {
 
               <span className="absolute inset-y-0 right-0 flex items-center pr-2">
                 {multiple && selectedFilters.length > 0 ? (
-                  <XIcon
+                  <XMarkIcon
                     className="h-5 w-5 text-black-400"
                     aria-hidden="true"
                     onClick={handleCleanRouter}
@@ -237,7 +237,7 @@ function Input({ handleSendUrl }) {
           }`}
           type="button"
         >
-          <XIcon className="w-5" aria-hidden="true" onClick={handleCleanQuery} />
+          <XMarkIcon className="w-5" aria-hidden="true" onClick={handleCleanQuery} />
         </button>
 
         <button
