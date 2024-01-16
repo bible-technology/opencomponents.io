@@ -4,10 +4,14 @@ import uw_logo from '../public/logo/unfoldingword.svg'
 import tt_logo from '../public/logo/tt_logo.svg'
 import bc_logo from '../public/logo/logo-white@2x.png'
 import ip_logo from '../public/logo/idiomaspuentes-logo.svg'
-import eten_logo from '../public/logo/eten_logo.png'
+import ilab_logo from '../public/logo/ilab_logo_dark.png'
 
 const orgs = [
-  { logo: eten_logo, url: 'https://eten.bible/', w: 131 },
+  {
+    logo: ilab_logo,
+    url: 'https://etenlab.notion.site/',
+    w: 68,
+  },
   { logo: uw_logo, url: 'https://unfoldingword.org', w: 228 },
   { logo: ip_logo, url: 'https://idiomaspuentes.org/', w: 208 },
   { logo: bc_logo, url: 'https://bridgeconn.com/', w: 112 },
