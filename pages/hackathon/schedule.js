@@ -242,7 +242,7 @@ export default function Schedule() {
                 <div className="block lg:hidden">9:30AM&nbsp;- 11AM&nbsp;EST</div>
               </td>
               <td className="border hidden lg:table-cell border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
-                9:30AM&nbsp;- 11AM&nbsp;EST
+                9:30AM&nbsp;-&nbsp;11AM&nbsp;EST
               </td>
               <td className="border border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
                 Introduce your team and your team&#39;s learning goals.
@@ -256,7 +256,7 @@ export default function Schedule() {
                 Learn with your team
               </td>
               <td className="border border-slate-300 py-1 px-2 md:py-2 md:px-3">
-                Feb&nbsp;26th&nbsp;- March&nbsp;1st
+                Feb&nbsp;26th&nbsp;-&nbsp;March&nbsp;1st
               </td>
               <td className="border hidden lg:table-cell border-slate-300 py-1 px-2 md:py-2 md:px-3"></td>
               <td className="border border-slate-300 py-1 px-2 md:py-2 md:px-3">
@@ -271,11 +271,11 @@ export default function Schedule() {
                 Learning presentations
               </td>
               <td className="border border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
-                Feb&nbsp;27th&nbsp;- March&nbsp;1st
+                Feb&nbsp;27th&nbsp;-&nbsp;March&nbsp;1st
                 <div className="block lg:hidden">9:30AM&nbsp;- 11AM&nbsp;EST</div>
               </td>
               <td className="border hidden lg:table-cell border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
-                9:30AM&nbsp;- 11AM&nbsp;EST
+                9:30AM&nbsp;-&nbsp;11AM&nbsp;EST
               </td>
               <td className="border border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
                 Several 50 minute learnathon sessions will be conducted throughout the
@@ -294,7 +294,7 @@ export default function Schedule() {
                 <div className="block lg:hidden">9AM&nbsp;- 11AM&nbsp;EST</div>
               </td>
               <td className="border hidden lg:table-cell border-slate-300 py-1 px-2 md:py-2 md:px-3">
-                9AM&nbsp;- 11AM&nbsp;EST
+                9AM&nbsp;-&nbsp;11AM&nbsp;EST
               </td>
               <td className="border border-slate-300 py-1 px-2 md:py-2 md:px-3">
                 Introduce your team&#39;s problem statement and related hypothesis.
@@ -308,7 +308,7 @@ export default function Schedule() {
                 Hack with your team
               </td>
               <td className="border border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
-                March&nbsp;1st&nbsp;- March&nbsp;8th
+                March&nbsp;1st&nbsp;-&nbsp;March&nbsp;8th
               </td>
               <td className="border hidden lg:table-cell border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3"></td>
               <td className="border border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
@@ -327,7 +327,7 @@ export default function Schedule() {
                 <div className="block lg:hidden">9AM&nbsp;- 11AM&nbsp;EST</div>
               </td>
               <td className="border hidden lg:table-cell border-slate-300 py-1 px-2 md:py-2 md:px-3">
-                9AM&nbsp;- 11AM&nbsp;EST
+                9AM&nbsp;-&nbsp;11AM&nbsp;EST
               </td>
               <td className="border border-slate-300 py-1 px-2 md:py-2 md:px-3">
                 Demonstrate your solution and findings.
