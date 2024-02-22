@@ -172,7 +172,7 @@ export default function Schedule() {
                 Register
               </td>
               <td className="border border-slate-300 py-1 px-2 md:py-2 md:px-3">
-                Jan&nbsp;17th&nbsp;- Feb&nbsp;26th
+                Jan&nbsp;17th&nbsp;-&nbsp;Feb&nbsp;26th
               </td>
               <td className="border hidden lg:table-cell border-slate-300 py-1 px-2 md:py-2 md:px-3"></td>
               <td className="border border-slate-300 py-1 px-2 md:py-2 md:px-3">
@@ -239,10 +239,10 @@ export default function Schedule() {
               </td>
               <td className="border border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
                 Feb&nbsp;26th
-                <div className="block lg:hidden">9AM&nbsp;- 11AM&nbsp;EST</div>
+                <div className="block lg:hidden">9:30AM&nbsp;- 11AM&nbsp;EST</div>
               </td>
               <td className="border hidden lg:table-cell border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
-                9AM&nbsp;- 11AM&nbsp;EST
+                9:30AM&nbsp;- 11AM&nbsp;EST
               </td>
               <td className="border border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
                 Introduce your team and your team&#39;s learning goals.
@@ -272,10 +272,10 @@ export default function Schedule() {
               </td>
               <td className="border border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
                 Feb&nbsp;27th&nbsp;- March&nbsp;1st
-                <div className="block lg:hidden">9AM&nbsp;- 11AM&nbsp;EST</div>
+                <div className="block lg:hidden">9:30AM&nbsp;- 11AM&nbsp;EST</div>
               </td>
               <td className="border hidden lg:table-cell border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
-                9AM&nbsp;- 11AM&nbsp;EST
+                9:30AM&nbsp;- 11AM&nbsp;EST
               </td>
               <td className="border border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
                 Several 50 minute learnathon sessions will be conducted throughout the
