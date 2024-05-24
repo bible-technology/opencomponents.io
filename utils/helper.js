@@ -22,3 +22,5 @@ export const timeSince = (dateString) => {
   }
   return Math.floor(seconds) + ' seconds'
 }
+
+export const hackathonActive = false
