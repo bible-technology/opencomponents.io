@@ -1,11 +1,117 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { useState } from 'react'
 
 import BannerHackathonSmall from '../../components/BannerHackathonSmall'
 
 export default function Schedule() {
-  const [isShowModal, setIsShowModal] = useState(false)
+  const table = [
+    {
+      number: 1,
+      stepsInvolved: <>Registration</>,
+      date: <>Jan&nbsp;17th&nbsp;-&nbsp;Feb&nbsp;26th</>,
+      time: '',
+      description: (
+        <>
+          You can register for the event at{' '}
+          <Link href="/hackathon/register">
+            <a className="text-primary-500 hover:underline">register link</a>
+          </Link>
+          .
+        </>
+      ),
+    },
+    {
+      number: 2,
+      stepsInvolved: <>Create a team or Join an existing team</>,
+      date: <></>,
+      time: '',
+      description: (
+        <>
+          You&#39;ll be working in teams for the two weeks. We recommend the team size to
+          be at least 3 and maximum 7 members. If you&#39;d like to create a new team,
+          please{' '}
+          <a
+            href="https://forms.gle/VbeTG472AKbhpLnw9"
+            target="_blank"
+            rel="noreferrer"
+            className="text-primary-500 cursor-pointer hover:underline"
+          >
+            fill out a form here
+          </a>
+          . If you&#39;d like to join an existing team, please{' '}
+          <a
+            target="_blank"
+            href="https://discord.gg/9mZVrnn83z"
+            className="text-primary-500 cursor-pointer hover:underline"
+            rel="noreferrer"
+          >
+            reach out to other participants here
+          </a>
+          .
+        </>
+      ),
+    },
+    {
+      number: 3,
+      stepsInvolved: <>Join the OCE Community on Discord</>,
+      date: <></>,
+      time: '',
+      description: (
+        <>
+          We encourage you to join and be an active part of our online community on
+          Discord as soon as you register.
+        </>
+      ),
+    },
+    {
+      number: 4,
+      stepsInvolved: <>Learnathon Kick off</>,
+      date: <>Feb&nbsp;26th</>,
+      time: <>9:30AM&nbsp;-&nbsp;11AM&nbsp;EST</>,
+      description: <>Introduce your team and your team&#39;s learning goals.</>,
+    },
+    {
+      number: 5,
+      stepsInvolved: <>Learn with your team</>,
+      date: <>Feb&nbsp;26th&nbsp;-&nbsp;March&nbsp;1st</>,
+      description: <>Collaborate and learn a new technology together.</>,
+    },
+    {
+      number: 6,
+      stepsInvolved: <>Learning presentations</>,
+      date: <>Feb&nbsp;27th&nbsp;-&nbsp;March&nbsp;1st</>,
+      time: <>9:30AM&nbsp;-&nbsp;11AM&nbsp;EST</>,
+      description: (
+        <>
+          Several 50 minute learnathon sessions will be conducted throughout the week.
+          These sessions may be led by individuals or teams.
+        </>
+      ),
+    },
+    {
+      number: 7,
+      stepsInvolved: <>Hackathon Kick off</>,
+      date: <>March&nbsp;4th</>,
+      time: <>9AM&nbsp;-&nbsp;11AM&nbsp;EST</>,
+      description: (
+        <>Introduce your team&#39;s problem statement and related hypothesis.</>
+      ),
+    },
+    {
+      number: 8,
+      stepsInvolved: <>Hack with your team</>,
+      date: <>March&nbsp;1st&nbsp;-&nbsp;March&nbsp;8th</>,
+      time: '',
+      description: <>Hack a solution together.</>,
+    },
+    {
+      number: 9,
+      stepsInvolved: <>Demo your Hack</>,
+      date: <>March&nbsp;8th</>,
+      time: <>9AM&nbsp;- 11AM&nbsp;EST</>,
+      description: <>Demonstrate your solution and findings.</>,
+    },
+  ]
   return (
     <div className="flex flex-col gap-10 mx-4 xl:gap-12">
       <Head>
@@ -15,60 +121,6 @@ export default function Schedule() {
       </Head>
 
       <BannerHackathonSmall />
-      {/* <div
-        className={`fixed ${
-          isShowModal ? 'flex' : 'hidden'
-        } inset-0 bg-black bg-opacity-25 backdrop-blur-sm justify-center items-center`}
-        onClick={() => setIsShowModal((prev) => !prev)}
-      >
-        <div
-          onClick={(e) => e.stopPropagation()}
-          className="max-w-lg m-6 relative rounded-md bg-white shadow-md max-h-[90vh] overflow-auto p-6"
-        >
-          <div
-            className="absolute top-4 right-4 rounded border border-gray-300 w-8 h-8 flex justify-center items-center hover:bg-gray-200 cursor-pointer"
-            onClick={() => setIsShowModal((prev) => !prev)}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </div>
-          <div className="text-primary-600 text-2xl mb-4 font-bold">Summary*:</div>
-          <p className="text-text-800">
-            A Translation Resource Ecosystem for Bible translation is a comprehensive
-            system that includes all the tools, resources, and processes necessary for
-            accurately and effectively translating the Bible into different languages.
-            This ecosystem includes translation software, dictionaries and lexicons,
-            language resources, and guidelines for translation principles and practices.
-            It also involves a network of skilled translators, reviewers, and consultants
-            who work together to ensure the accuracy and clarity of the translated text.
-            <br />
-            <br />
-            The Translation Resource Ecosystem also includes processes for managing and
-            updating the translation resources over time, as well as strategies for
-            promoting and distributing the translated Bible to target audiences.
-            <br />
-            <br />
-            Overall, the Translation Resource Ecosystem is a vital component of any Bible
-            translation project, providing the resources and support needed to ensure that
-            the translation is faithful, accurate, and accessible to all.
-          </p>
-          <p className="text-sm mt-7 text-text-500">
-            * This summary was authored by ChatGPT.
-          </p>
-        </div>
-      </div> */}
       <div className="flex flex-col items-center">
         <div className="grid grid-cols-1 gap-5 mb-5 md:grid-cols-2 lg:grid-cols-3 md:mb-10 xl:grid-cols-3 w-full">
           <div className="py-8 px-6 bg-primary-100 rounded-xl w-full flex flex-col justify-between md:col-start-1 md:col-end-3 lg:col-end-auto lg:col-start-auto col-end-auto col-start-auto">
@@ -76,12 +128,7 @@ export default function Schedule() {
               Hackathon theme
             </div>
             <div className="mt-4 text-gray-700 text-lg sm:text-xl">
-              <span
-                className=""
-                // onClick={() => setIsShowModal((prev) => !prev)}
-              >
-                Multi-modal community checking solutions
-              </span>
+              <span>Multi-modal community checking solutions</span>
             </div>
           </div>
           <div className="py-8 px-6 bg-primary-100 rounded-xl w-full flex flex-col justify-between">
@@ -148,191 +195,52 @@ export default function Schedule() {
         <table className="table-auto border-collapse border border-slate-400">
           <thead>
             <tr>
+              <th className="border table-cell md:hidden border-slate-400 py-1 px-2 md:py-2 md:px-3 bg-[#abbdc4]"></th>
               <th className="border hidden lg:table-cell border-slate-400 py-1 px-2 md:py-2 md:px-3 bg-[#abbdc4]"></th>
-              <th className="border border-slate-400 py-1 px-2 md:py-2 md:px-3 bg-[#abbdc4]">
+              <th className="border hidden md:table-cell border-slate-400 py-1 px-2 md:py-2 md:px-3 bg-[#abbdc4]">
                 Steps Involved
               </th>
-              <th className="border border-slate-400 w-40 py-1 px-2 md:py-2 md:px-3 bg-[#abbdc4]">
+              <th className="border hidden md:table-cell border-slate-400 w-52 py-1 px-2 md:py-2 md:px-3 bg-[#abbdc4]">
                 Important Dates
               </th>
-              <th className="border hidden lg:table-cell w-40 border-slate-400 py-1 px-2 md:py-2 md:px-3 bg-[#abbdc4]">
-                Timing
-              </th>
-              <th className="border border-slate-400 py-1 px-2 md:py-2 md:px-3 bg-[#abbdc4]">
+              <th className="border hidden md:table-cell border-slate-400 py-1 px-2 md:py-2 md:px-3 bg-[#abbdc4]">
                 Description
               </th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td className="border hidden lg:table-cell border-slate-300 py-1 px-2 md:py-2 md:px-3">
-                1
-              </td>
-              <td className="border border-slate-300 py-1 px-2 md:py-2 md:px-3">
-                Register
-              </td>
-              <td className="border border-slate-300 py-1 px-2 md:py-2 md:px-3">
-                Jan&nbsp;17th&nbsp;-&nbsp;Feb&nbsp;26th
-              </td>
-              <td className="border hidden lg:table-cell border-slate-300 py-1 px-2 md:py-2 md:px-3"></td>
-              <td className="border border-slate-300 py-1 px-2 md:py-2 md:px-3">
-                You can register for the event at{' '}
-                <Link href="/hackathon/register">
-                  <a className="text-primary-500 hover:underline">register link</a>
-                </Link>
-                .
-              </td>
-            </tr>
-            <tr>
-              <td className="border hidden lg:table-cell border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
-                2
-              </td>
-              <td className="border border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
-                Create a team or Join an existing team
-              </td>
-              <td className="border border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3"></td>
-              <td className="border hidden lg:table-cell border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3"></td>
-              <td className="border border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
-                You&#39;ll be working in teams for the two weeks. We recommend the team
-                size to be at least 3 and maximum 7 members. If you&#39;d like to create a
-                new team, please{' '}
-                <a
-                  href="https://forms.gle/VbeTG472AKbhpLnw9"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-primary-500 cursor-pointer hover:underline"
-                >
-                  fill out a form here
-                </a>
-                . If you&#39;d like to join an existing team, please{' '}
-                <a
-                  target="_blank"
-                  href="https://discord.gg/9mZVrnn83z"
-                  className="text-primary-500 cursor-pointer hover:underline"
-                  rel="noreferrer"
-                >
-                  reach out to other participants here
-                </a>
-                .
-              </td>
-            </tr>
-            <tr>
-              <td className="border hidden lg:table-cell border-slate-300 py-1 px-2 md:py-2 md:px-3">
-                3
-              </td>
-              <td className="border border-slate-300 py-1 px-2 md:py-2 md:px-3">
-                Join the OCE Community on Discord
-              </td>
-              <td className="border border-slate-300 py-1 px-2 md:py-2 md:px-3"></td>
-              <td className="border hidden lg:table-cell border-slate-300 py-1 px-2 md:py-2 md:px-3"></td>
-              <td className="border border-slate-300 py-1 px-2 md:py-2 md:px-3">
-                We encourage you to join and be an active part of our online community on
-                Discord as soon as you register.
-              </td>
-            </tr>
-            <tr>
-              <td className="border hidden lg:table-cell border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
-                4
-              </td>
-              <td className="border border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
-                Learnathon Kick off
-              </td>
-              <td className="border border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
-                Feb&nbsp;26th
-                <div className="block lg:hidden">9:30AM&nbsp;- 11AM&nbsp;EST</div>
-              </td>
-              <td className="border hidden lg:table-cell border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
-                9:30AM&nbsp;-&nbsp;11AM&nbsp;EST
-              </td>
-              <td className="border border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
-                Introduce your team and your team&#39;s learning goals.
-              </td>
-            </tr>
-            <tr>
-              <td className="border hidden lg:table-cell border-slate-300 py-1 px-2 md:py-2 md:px-3">
-                5
-              </td>
-              <td className="border border-slate-300 py-1 px-2 md:py-2 md:px-3">
-                Learn with your team
-              </td>
-              <td className="border border-slate-300 py-1 px-2 md:py-2 md:px-3">
-                Feb&nbsp;26th&nbsp;-&nbsp;March&nbsp;1st
-              </td>
-              <td className="border hidden lg:table-cell border-slate-300 py-1 px-2 md:py-2 md:px-3"></td>
-              <td className="border border-slate-300 py-1 px-2 md:py-2 md:px-3">
-                Collaborate and learn a new technology together.
-              </td>
-            </tr>
-            <tr>
-              <td className="border hidden lg:table-cell border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
-                6
-              </td>
-              <td className="border border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
-                Learning presentations
-              </td>
-              <td className="border border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
-                Feb&nbsp;27th&nbsp;-&nbsp;March&nbsp;1st
-                <div className="block lg:hidden">9:30AM&nbsp;- 11AM&nbsp;EST</div>
-              </td>
-              <td className="border hidden lg:table-cell border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
-                9:30AM&nbsp;-&nbsp;11AM&nbsp;EST
-              </td>
-              <td className="border border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
-                Several 50 minute learnathon sessions will be conducted throughout the
-                week. These sessions may be led by individuals or teams.
-              </td>
-            </tr>
-            <tr>
-              <td className="border hidden lg:table-cell border-slate-300 py-1 px-2 md:py-2 md:px-3">
-                7
-              </td>
-              <td className="border border-slate-300 py-1 px-2 md:py-2 md:px-3">
-                Hackathon Kick off
-              </td>
-              <td className="border border-slate-300 py-1 px-2 md:py-2 md:px-3">
-                March&nbsp;4th
-                <div className="block lg:hidden">9AM&nbsp;- 11AM&nbsp;EST</div>
-              </td>
-              <td className="border hidden lg:table-cell border-slate-300 py-1 px-2 md:py-2 md:px-3">
-                9AM&nbsp;-&nbsp;11AM&nbsp;EST
-              </td>
-              <td className="border border-slate-300 py-1 px-2 md:py-2 md:px-3">
-                Introduce your team&#39;s problem statement and related hypothesis.
-              </td>
-            </tr>
-            <tr>
-              <td className="border hidden lg:table-cell border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
-                8
-              </td>
-              <td className="border border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
-                Hack with your team
-              </td>
-              <td className="border border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
-                March&nbsp;1st&nbsp;-&nbsp;March&nbsp;8th
-              </td>
-              <td className="border hidden lg:table-cell border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3"></td>
-              <td className="border border-slate-300 bg-primary-100 py-1 px-2 md:py-2 md:px-3">
-                Hack a solution together.
-              </td>
-            </tr>
-            <tr>
-              <td className="border hidden lg:table-cell border-slate-300 py-1 px-2 md:py-2 md:px-3">
-                9
-              </td>
-              <td className="border border-slate-300 py-1 px-2 md:py-2 md:px-3">
-                Demo your Hack
-              </td>
-              <td className="border border-slate-300 py-1 px-2 md:py-2 md:px-3">
-                March&nbsp;8th
-                <div className="block lg:hidden">9AM&nbsp;- 11AM&nbsp;EST</div>
-              </td>
-              <td className="border hidden lg:table-cell border-slate-300 py-1 px-2 md:py-2 md:px-3">
-                9AM&nbsp;-&nbsp;11AM&nbsp;EST
-              </td>
-              <td className="border border-slate-300 py-1 px-2 md:py-2 md:px-3">
-                Demonstrate your solution and findings.
-              </td>
-            </tr>
+            {table.map((line, idx) => (
+              <tr key={idx}>
+                <td className="border table-cell md:hidden border-slate-300 py-1 px-2 md:py-2 md:px-3">
+                  <p className="text-lg font-bold mt-2 mb-3">{line.stepsInvolved}</p>
+                  {line.description}
+                  <p className="text-gray-500 mt-4 empty:hidden">
+                    {line.date}
+                    {line.time ? <> | {line.time}</> : ''}
+                  </p>
+                </td>
+                <td className="border hidden lg:table-cell border-slate-300 py-1 px-2 md:py-2 md:px-3">
+                  {line.number}
+                </td>
+                <td className="border hidden md:table-cell border-slate-300 py-1 px-2 md:py-2 md:px-3">
+                  {line.stepsInvolved}
+                </td>
+                <td className="border hidden md:table-cell border-slate-300 py-1 px-2 md:py-2 md:px-3">
+                  {line.date}
+                  {line.time ? (
+                    <>
+                      <br />
+                      {line.time}
+                    </>
+                  ) : (
+                    ''
+                  )}
+                </td>
+                <td className="border hidden md:table-cell border-slate-300 py-1 px-2 md:py-2 md:px-3">
+                  {line.description}
+                </td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
