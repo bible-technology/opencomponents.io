@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 import uw_logo from '../public/logo/unfoldingword.svg'
-// import tt_logo from '../public/logo/tt_logo.svg'
+import logo_hiscoder from '../public/logo/logo_hiscoder.svg'
 import bc_logo from '../public/logo/logo-white@2x.png'
 import ip_logo from '../public/logo/idiomaspuentes-logo.svg'
 import ilab_logo from '../public/logo/ilab_logo_dark.png'
@@ -15,7 +15,7 @@ const orgs = [
   { logo: uw_logo, url: 'https://unfoldingword.org', w: 228 },
   { logo: ip_logo, url: 'https://idiomaspuentes.org/', w: 208 },
   { logo: bc_logo, url: 'https://bridgeconn.com/', w: 112 },
-  // { logo: tt_logo, url: 'https://texttree.org', w: 145 },
+  { logo: logo_hiscoder, url: 'https://hiscoder.com/', w: 145 },
 ]
 function Partners() {
   return (
