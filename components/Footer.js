@@ -41,7 +41,7 @@ function Footer() {
               <a className="btn-transparent hidden">FAQ</a>
             </Link> */}
             <Link href="/hackathon/register">
-              <a className="btn-transparent">Hackathon 2024</a>
+              <a className="btn-transparent">Hackathon 2025</a>
             </Link>
           </div>
         </div>

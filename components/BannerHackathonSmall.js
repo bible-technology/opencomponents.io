@@ -22,7 +22,7 @@ function BannerHackathon() {
     <div className="flex flex-col lg:flex-row items-center rounded-xl bg-secondary-400 px-4 md:px-12 py-6">
       <div className="basis-0 shrink flex-grow-[4] lg:flex-grow-[5] mb-4 lg:mb-0">
         <div className="mb-6 text-2xl sm:text-4xl font-bold text-gray-800 mt-8 md:mt-4 md:mb-8 lg:text-4xl xl:text-5xl">
-          Open Components Hackathon&nbsp;2024
+          Open Components Hackathon&nbsp;2025
         </div>
         <div className="text-md text-gray-700 md:text-lg">
           Presented&nbsp;by{' '}
