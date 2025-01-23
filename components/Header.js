@@ -54,7 +54,7 @@ function Header() {
         {hackathonActive && (
           <div className="flex gap-2 btn group">
             <div className="relative">
-              <a className="cursor-pointer text-[#f15e59]">Hackathon 2024</a>
+              <a className="cursor-pointer text-[#f15e59]">Hackathon 2025</a>
               <div className="absolute flex-col mt-2 p-3 shadow-md z-50 bg-white rounded-md hidden group-hover:flex">
                 <Link href="/hackathon/register">
                   <a className="btn-gray">Registration</a>
@@ -178,7 +178,7 @@ function Header() {
             }}
             className="btn cursor-pointer text-[#f15e59]"
           >
-            Hackathon 2024
+            Hackathon 2025
           </a>
           <Link href="/hackathon/register">
             <a className="pl-8 whitespace-nowrap rounded-md text-text-500 hover:text-text-600 active:text-text-500">

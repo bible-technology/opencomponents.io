@@ -7,8 +7,8 @@ export default function Schedule() {
   const table = [
     {
       number: 1,
-      stepsInvolved: <>Registration</>,
-      date: <>Jan&nbsp;17th&nbsp;-&nbsp;Feb&nbsp;26th</>,
+      stepsInvolved: <>Register</>,
+      date: <>Jan&nbsp;20th&nbsp;-&nbsp;Feb&nbsp;23rd</>,
       time: '',
       description: (
         <>
@@ -66,21 +66,21 @@ export default function Schedule() {
     {
       number: 4,
       stepsInvolved: <>Learnathon Kick off</>,
-      date: <>Feb&nbsp;26th</>,
-      time: <>9:30AM&nbsp;-&nbsp;11AM&nbsp;EST</>,
+      date: <>Feb&nbsp;24th</>,
+      time: <>9AM&nbsp;-&nbsp;11AM&nbsp;EST</>,
       description: <>Introduce your team and your team&#39;s learning goals.</>,
     },
     {
       number: 5,
       stepsInvolved: <>Learn with your team</>,
-      date: <>Feb&nbsp;26th&nbsp;-&nbsp;March&nbsp;1st</>,
+      date: <>Feb&nbsp;24th&nbsp;-&nbsp;28th</>,
       description: <>Collaborate and learn a new technology together.</>,
     },
     {
       number: 6,
       stepsInvolved: <>Learning presentations</>,
-      date: <>Feb&nbsp;27th&nbsp;-&nbsp;March&nbsp;1st</>,
-      time: <>9:30AM&nbsp;-&nbsp;11AM&nbsp;EST</>,
+      date: <>Feb&nbsp;24th&nbsp;-&nbsp;28th</>,
+      time: <>9AM&nbsp;-&nbsp;11AM&nbsp;EST</>,
       description: (
         <>
           Several 50 minute learnathon sessions will be conducted throughout the week.
@@ -91,7 +91,7 @@ export default function Schedule() {
     {
       number: 7,
       stepsInvolved: <>Hackathon Kick off</>,
-      date: <>March&nbsp;4th</>,
+      date: <>March&nbsp;3rd</>,
       time: <>9AM&nbsp;-&nbsp;11AM&nbsp;EST</>,
       description: (
         <>Introduce your team&#39;s problem statement and related hypothesis.</>
@@ -100,14 +100,14 @@ export default function Schedule() {
     {
       number: 8,
       stepsInvolved: <>Hack with your team</>,
-      date: <>March&nbsp;1st&nbsp;-&nbsp;March&nbsp;8th</>,
+      date: <>March&nbsp;3rd&nbsp;-&nbsp;7th</>,
       time: '',
       description: <>Hack a solution together.</>,
     },
     {
       number: 9,
       stepsInvolved: <>Demo your Hack</>,
-      date: <>March&nbsp;8th</>,
+      date: <>March&nbsp;7th</>,
       time: <>9AM&nbsp;- 11AM&nbsp;EST</>,
       description: <>Demonstrate your solution and findings.</>,
     },
@@ -115,8 +115,8 @@ export default function Schedule() {
   return (
     <div className="flex flex-col gap-10 mx-4 xl:gap-12">
       <Head>
-        <title>Schedule Open Components Hackathon 2024</title>
-        <meta name="description" content="Open Components Hackathon 2024" />
+        <title>Schedule Open Components Hackathon 2025</title>
+        <meta name="description" content="Open Components Hackathon 2025" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -128,7 +128,10 @@ export default function Schedule() {
               Hackathon theme
             </div>
             <div className="mt-4 text-gray-700 text-lg sm:text-xl">
-              <span>Multi-modal community checking solutions</span>
+              <span>
+                Exploring Theia to make Bible translation software development globally
+                accessible
+              </span>
             </div>
           </div>
           <div className="py-8 px-6 bg-primary-100 rounded-xl w-full flex flex-col justify-between">

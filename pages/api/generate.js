@@ -7,7 +7,7 @@ export default async function handler(req, res) {
     const data = await require('react-google-forms-hooks').googleFormsToJson(
       'https://docs.google.com/forms/d/e/' +
         (process.env.GOOGLE_FORM_ID ??
-          '1FAIpQLSdma-rdJELwPGL-Iw7x28h3nZbvCaiFAABpz9B_17kuemSbWg') +
+          '1FAIpQLSefEzNY1Ck9MhTzPfjMS95pzWAVmpLdgYKQL_eG2KAPBceFuw') +
         '/viewform'
     )
     await fs.writeFile('GoogleForm.json', JSON.stringify(data))

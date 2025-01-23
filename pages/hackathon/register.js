@@ -17,8 +17,8 @@ export default function Register({ user }) {
   return (
     <div className="flex flex-col gap-10 mx-4 xl:gap-12 mb-8">
       <Head>
-        <title>Open Components Hackathon 2024</title>
-        <meta name="description" content="Open Components Hackathon 2024" />
+        <title>Open Components Hackathon 2025</title>
+        <meta name="description" content="Open Components Hackathon 2025" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {['form', 'default'].includes(stateRegistration) ? <BannerHackathon /> : ''}
@@ -54,7 +54,7 @@ export default function Register({ user }) {
                       />
                     </svg>
 
-                    <span>February 26 - March 1, 2024</span>
+                    <span>February 24 - 28, 2025</span>
                   </div>
                   <div className="pr-2 my-4 text-gray-700 flex items-center text-base">
                     <svg
@@ -102,7 +102,7 @@ export default function Register({ user }) {
                         d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
                       />
                     </svg>
-                    <span>March 4 - 8, 2024</span>
+                    <span>March 3 - 7, 2025</span>
                   </div>
                   <div className="pr-2 my-4 text-gray-700 flex items-center text-base">
                     <svg
@@ -124,10 +124,7 @@ export default function Register({ user }) {
                         d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
                       />
                     </svg>
-                    <span>
-                      Orlando&nbsp;-&nbsp;Florida&nbsp;| New&nbsp;Delhi&nbsp;|
-                      Switzerland&nbsp;| Online
-                    </span>
+                    <span>Online</span>
                   </div>
                 </div>
               </div>
