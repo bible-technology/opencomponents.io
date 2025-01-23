@@ -15,7 +15,7 @@ const orgs = [
   { logo: uw_logo, url: 'https://unfoldingword.org', w: 228 },
   { logo: ip_logo, url: 'https://idiomaspuentes.org/', w: 208 },
   { logo: bc_logo, url: 'https://bridgeconn.com/', w: 112 },
-  { logo: logo_hiscoder, url: 'https://hiscoder.com/', w: 145 },
+  { logo: logo_hiscoder, url: 'https://hiscoder.com/', w: 90 },
 ]
 function Partners() {
   return (
