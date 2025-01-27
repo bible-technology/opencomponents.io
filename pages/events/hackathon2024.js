@@ -14,7 +14,7 @@ export default function Hackathon2024() {
         <title>Hackathon 2024 - Events - Open Components Ecosystem</title>
         <meta
           name="description"
-          content="More than 50 individuals from 10 different organizations, including BCS, TextTree, MVH Solutions, Idiomas Puentes, Biblica, SIL, iLab, BiblioNexus, Prediction Guard, and unfoldingWord, joined the two-week Open Components community event earlier this month."
+          content="More than 50 individuals from 10 different organizations, including BCS, HisCoder, MVH Solutions, Idiomas Puentes, Biblica, SIL, iLab, BiblioNexus, Prediction Guard, and unfoldingWord, joined the two-week Open Components community event earlier this month."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -23,7 +23,7 @@ export default function Hackathon2024() {
         <br />
         <p>
           More than 50 individuals from 10 different organizations, including BCS,
-          TextTree, MVH Solutions, Idiomas Puentes, Biblica, SIL, iLab, BiblioNexus,
+          HisCoder, MVH Solutions, Idiomas Puentes, Biblica, SIL, iLab, BiblioNexus,
           Prediction Guard, and unfoldingWord, joined the two-week Open Components
           community event earlier this month. The event kicked off with a Learnathon,
           which was held online from February 26 to March 1, featuring seven informative
@@ -225,7 +225,7 @@ export default function Hackathon2024() {
           >
             Hackathon Presentations
           </a>
-          <ul className="mt-3 ml-5">
+          <ul className="mt-3 ml-10">
             <li className="py-1">
               <b>2:47 -</b> Scripture navigation by pictures for audio bible/ video files
             </li>
