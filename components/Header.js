@@ -80,6 +80,9 @@ function Header() {
               <Link href="/events/hackathon2023">
                 <a className="btn-gray">Hackathon 2023</a>
               </Link>
+              <Link href="/events/hackathon2024">
+                <a className="btn-gray">Hackathon 2024</a>
+              </Link>
               {/* <Link href="/events/hackathon2024">
                 <a className="btn-gray">Hackathon 2024</a>
               </Link> */}
