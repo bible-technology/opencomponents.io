@@ -172,6 +172,16 @@ export default function Hackathon2024() {
               Platform.Bible Code Walkthrough
             </a>
           </li>
+          <li>
+            <a
+              href="https://docs.google.com/presentation/d/12LEipOsoSoR602JZ3hxHL__bj4HpGx-EMCz4IYiW3zE/edit#slide=id.p"
+              target={'_blank'}
+              rel="noreferrer"
+              className="underline-custom"
+            >
+              VS Code Extn
+            </a>
+          </li>
         </ul>
         <div className="mt-12">
           <h3 className="font-bold mt-10 text-3xl">Hackathon</h3>
