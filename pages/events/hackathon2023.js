@@ -18,7 +18,7 @@ export default function Hackathon2023() {
         <title>Hackathon 2023 - Events - Open Components Ecosystem</title>
         <meta
           name="description"
-          content="Over 60 developers from 9 organizations (BCS, TextTree, MVH Solutions, Idiomas Puentes, Biblica, Wycliffe, SIL, Clear, and unfoldingWord) participated in the 2023 iLab Open Components Learnathon and Hackathon."
+          content="Over 60 developers from 9 organizations (BCS, HisCoder, MVH Solutions, Idiomas Puentes, Biblica, Wycliffe, SIL, Clear, and unfoldingWord) participated in the 2023 iLab Open Components Learnathon and Hackathon."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -26,7 +26,7 @@ export default function Hackathon2023() {
       <div className="mx-auto md:px-10 lg:px-20 2xl:px-40 text-lg leading-8">
         <br />
         <p>
-          Over 60 developers from 9 organizations (BCS, TextTree, MVH Solutions, Idiomas
+          Over 60 developers from 9 organizations (BCS, HisCoder, MVH Solutions, Idiomas
           Puentes, Biblica, Wycliffe, SIL, Clear, and unfoldingWord) participated in the
           2023 iLab Open Components Learnathon and Hackathon. While the learnathon was a
           virtual event via zoom, for the Hackathon, we had 10 teams working on 12
