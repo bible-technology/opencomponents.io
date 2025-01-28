@@ -83,9 +83,6 @@ function Header() {
               <Link href="/events/hackathon2024">
                 <a className="btn-gray">Hackathon 2024</a>
               </Link>
-              {/* <Link href="/events/hackathon2024">
-                <a className="btn-gray">Hackathon 2024</a>
-              </Link> */}
             </div>
           </div>
           <Image

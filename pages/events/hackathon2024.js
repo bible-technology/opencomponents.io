@@ -104,23 +104,7 @@ export default function Hackathon2024() {
               rel="noreferrer"
               className="underline-custom"
             >
-              Aquifer &{' '}
-            </a>
-            <a
-              href="https://platform.paratext.org/"
-              target={'_blank'}
-              rel="noreferrer"
-              className="underline text-fuchsia-800"
-            >
-              Platform.Bible{' '}
-            </a>
-            <a
-              href="https://unfoldingword-org.zoom.us/rec/share/VesykIrH-LhJANXrlaQyM_UZ3LU4hBXzz0Cp4QTyzTaJ18XGAaDEYfLjCrRPc7E6.2EviGVcNB7vRcgeE?startTime=1676469949000"
-              target={'_blank'}
-              rel="noreferrer"
-              className="underline-custom"
-            >
-              demo
+              Aquifer & Platform.Bible demo
             </a>
           </li>
           <li>
@@ -170,41 +154,24 @@ export default function Hackathon2024() {
           </li>
           <li>
             <a
-              href="https://platform.paratext.org/"
+              href="https://docs.google.com/document/d/187e8eoav-5SNzn5opIJ1b31eIP23kiX7rpoCDJcNME4/edit?tab=t.0#heading=h.192yzf8m1f52"
               target={'_blank'}
               rel="noreferrer"
               className="underline-custom"
             >
-              Platform.Bible{' '}
-            </a>
-            <a
-              href="https://docs.google.com/document/d/187e8eoav-5SNzn5opIJ1b31eIP23kiX7rpoCDJcNME4/edit?tab=t.0#heading=h.192yzf8m1f52"
-              target={'_blank'}
-              rel="noreferrer"
-              className="text-fuchsia-800 underline"
-            >
-              Extn Info
+              Platform.Bible Extn Info
             </a>
           </li>
           <li>
             <a
-              href="https://platform.paratext.org/"
+              href="https://docs.google.com/document/d/1X1-IKGbg5Wa06zby0KS7ViTvnosKRkiNKpaLC2xp3pM/edit?tab=t.0#heading=h.wo97c7v4n3gd"
               target={'_blank'}
               rel="noreferrer"
               className="underline-custom"
             >
-              Platform.Bible{' '}
-            </a>
-            <a
-              href="https://docs.google.com/document/d/1X1-IKGbg5Wa06zby0KS7ViTvnosKRkiNKpaLC2xp3pM/edit?tab=t.0#heading=h.wo97c7v4n3gd"
-              target={'_blank'}
-              rel="noreferrer"
-              className="text-fuchsia-800 underline"
-            >
-              Code Walkthrough
+              Platform.Bible Code Walkthrough
             </a>
           </li>
-          <li></li>
         </ul>
         <div className="mt-12">
           <h3 className="font-bold mt-10 text-3xl">Hackathon</h3>
