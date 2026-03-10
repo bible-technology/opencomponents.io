@@ -3,7 +3,11 @@ import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import { hackathonActive } from '../utils/helper'
+import {
+  hackathonActive,
+  currentHackathonHubUrl,
+  currentHackathonLabel,
+} from '../utils/helper'
 
 import Chevron from '../public/chevron.svg'
 import Logo from '../public/logo.svg'
@@ -54,14 +58,19 @@ function Header() {
         {hackathonActive && (
           <div className="flex gap-2 btn group">
             <div className="relative">
-              <a className="cursor-pointer text-[#f15e59]">Hackathon 2025</a>
+              <a className="cursor-pointer text-[#f15e59]">{currentHackathonLabel}</a>
               <div className="absolute flex-col mt-2 p-3 shadow-md z-50 bg-white rounded-md hidden group-hover:flex">
-                <Link href="/hackathon/register">
-                  <a className="btn-gray">Registration</a>
+                <Link href="/hackathon">
+                  <a className="btn-gray">Overview</a>
                 </Link>
-                <Link href="/hackathon/schedule">
-                  <a className="btn-gray">Schedule</a>
-                </Link>
+                <a
+                  href={currentHackathonHubUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn-gray whitespace-nowrap"
+                >
+                  Register
+                </a>
               </div>
             </div>
             <Image
@@ -82,6 +91,9 @@ function Header() {
               </Link>
               <Link href="/events/hackathon2024">
                 <a className="btn-gray">Hackathon 2024</a>
+              </Link>
+              <Link href="/events/hackathon2025">
+                <a className="btn-gray">Hackathon 2025</a>
               </Link>
             </div>
           </div>
@@ -178,18 +190,21 @@ function Header() {
             }}
             className="btn cursor-pointer text-[#f15e59]"
           >
-            Hackathon 2025
+            {currentHackathonLabel}
           </a>
-          <Link href="/hackathon/register">
+          <Link href="/hackathon">
             <a className="pl-8 whitespace-nowrap rounded-md text-text-500 hover:text-text-600 active:text-text-500">
-              Registration
+              Overview
             </a>
           </Link>
-          <Link href="/hackathon/schedule">
-            <a className="pl-8 whitespace-nowrap rounded-md text-text-500 hover:text-text-600 active:text-text-500">
-              Schedule
-            </a>
-          </Link>
+          <a
+            href={currentHackathonHubUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="pl-8 whitespace-nowrap rounded-md text-text-500 hover:text-text-600 active:text-text-500"
+          >
+            Register
+          </a>
           <a
             onClick={(e) => {
               e.stopPropagation()
@@ -206,6 +221,11 @@ function Header() {
           <Link href="/events/hackathon2024">
             <a className="pl-8 whitespace-nowrap rounded-md text-text-500 hover:text-text-600 active:text-text-500">
               Hackathon 2024
+            </a>
+          </Link>
+          <Link href="/events/hackathon2025">
+            <a className="pl-8 whitespace-nowrap rounded-md text-text-500 hover:text-text-600 active:text-text-500">
+              Hackathon 2025
             </a>
           </Link>
           <Link href="/about">

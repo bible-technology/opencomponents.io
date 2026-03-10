@@ -8,7 +8,7 @@ export default function Layout({ fullwidth, children }) {
   const { route } = useRouter()
   return (
     <div className="flex flex-col min-h-screen">
-      {!['/hackathon/register', '/hackathon/schedule'].includes(route) ? (
+      {!['/hackathon', '/hackathon/register', '/hackathon/schedule'].includes(route) ? (
         <Hackathon />
       ) : (
         ''

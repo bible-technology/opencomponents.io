@@ -24,3 +24,8 @@ export const timeSince = (dateString) => {
 }
 
 export const hackathonActive = true
+export const currentHackathonYear = '2026'
+export const currentHackathonLabel = `Hackathon ${currentHackathonYear}`
+export const currentHackathonTitle = `Open Bible Tech Community Hackathon ${currentHackathonYear}`
+export const currentHackathonHubUrl =
+  'https://unfoldingword.notion.site/OBTC-Hackathon-Hub-2fe72d5af2de80f49eb8d2c2a0aa8b4d'

@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { currentHackathonLabel } from '../utils/helper'
+
 import discord from '../public/discord.svg'
 import Logo from '../public/logo-white.svg'
 
@@ -40,8 +42,8 @@ function Footer() {
             {/* <Link href="/faq">
               <a className="btn-transparent hidden">FAQ</a>
             </Link> */}
-            <Link href="/hackathon/register">
-              <a className="btn-transparent">Hackathon 2025</a>
+            <Link href="/hackathon">
+              <a className="btn-transparent">{currentHackathonLabel}</a>
             </Link>
           </div>
         </div>

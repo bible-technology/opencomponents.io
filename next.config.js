@@ -12,8 +12,13 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/hackathon',
-        destination: '/hackathon/register',
+        source: '/hackathon/register',
+        destination: '/events/hackathon2025',
+        permanent: true,
+      },
+      {
+        source: '/hackathon/schedule',
+        destination: '/events/hackathon2025',
         permanent: true,
       },
     ]
